@@ -7,9 +7,7 @@ class rmSectionDirective {
   constructor() {
     this.restrict = 'E';
     this.scope = {};
-    this.transclude = {
-      outside: '?outside'
-    };
+    this.transclude = true,
     this.template = template;
     this.controller = controller;
     this.controllerAs = 'vm';

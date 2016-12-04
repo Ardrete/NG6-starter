@@ -15,7 +15,7 @@ rm-home {
     float: left;
   }
   .page1 {
-     .page-container::before {
+     .background::before {
       content: '';
       position: absolute;
       top: 0;
@@ -29,9 +29,6 @@ rm-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    .page-outside{
-      z-index: 9;
-    }
   }
   .page2 {
     background: #008867;

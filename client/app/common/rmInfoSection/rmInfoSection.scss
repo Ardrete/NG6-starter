@@ -1,0 +1,40 @@
+@import '../common.scss';
+$nav-heigth: 12%;
+$content-height: 88%;
+rm-info-section {
+  .-nav {
+    height: $nav-heigth;
+    border: 1px solid gray;
+    .-name {
+      font-size: 2em;
+      text-align: left;
+      width: 50vh;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      margin-right: 4em;
+      margin-bottom: -1em;
+      z-index: 10;
+    }
+  }
+  .-container {
+    height: $content-height;
+    .-content {}
+  }
+  .-translucent {
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    overflow: auto;
+    top: $nav-heigth;
+    width: $sidenav-mobile-width;
+    height: $content-height;
+    translucent {
+      display: block;
+      color: white;
+      font-size: 19px;
+      font-weight: bold;
+      padding: 2em 2em 1em 2em;
+    }
+  }
+}

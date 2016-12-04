@@ -4,6 +4,7 @@ import ngMaterial from 'angular-material';
 
 import rmNavbar from './rmNavbar/rmNavbar';
 import rmListItem from './rmListitem/rmListitem';
+import rmInfoSection from './rmInfoSection/rmInfoSection';
 import rmSidebar from './rmSidebar/rmSidebar';
 import rmHeader from './rmHeader/rmHeader';
 import rmSection from './rmSection/rmSection';
@@ -13,6 +14,7 @@ let commonModule = angular.module('app.common', [
     rmNavbar,
     rmSidebar,
     rmListItem,
+    rmInfoSection,
     rmHeader,
     rmSection,
     User

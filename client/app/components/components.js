@@ -1,10 +1,10 @@
 import angular from 'angular';
 import rmHome from './rmHome/rmHome';
-import About from './about/about';
+import rmCompany from './rmCompany/rmCompany';
 
 let componentModule = angular.module('app.components', [
   rmHome,
-  About
+  rmCompany
 ])
 
 .name;
