@@ -1,0 +1,52 @@
+@import "../../common/common.scss";
+rm-home {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  float: left;
+  .main {
+    display: block;
+    position: static;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  .page1 {
+     .page-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      @include filter(blur(5px) grayscale(100%));
+      background: url(../../common/img/home.jpg) center top no-repeat #555;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .page-outside{
+      z-index: 9;
+    }
+  }
+  .page2 {
+    background: #008867;
+    .page-container {
+      position: absolute;
+      margin-left: -325px;
+      left: 50%;
+      top: 40%;
+      margin-bottom: 50px;
+      max-width: 650px;
+      h1 {
+        letter-spacing: -1px;
+        font-weight: 100;
+        font-size: 70px;
+      }
+    }
+  }
+}

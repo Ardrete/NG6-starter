@@ -1,12 +1,12 @@
 import angular from 'angular';
-import Home from './home/home';
+import rmHome from './rmHome/rmHome';
 import About from './about/about';
 
 let componentModule = angular.module('app.components', [
-  Home,
+  rmHome,
   About
 ])
-  
+
 .name;
 
 export default componentModule;

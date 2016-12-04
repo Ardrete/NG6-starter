@@ -1,0 +1,18 @@
+@import '../common';
+@import '../ionicons/scss/ionicons';
+.navbar {
+  padding-top: 20px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px #ebebeb solid;
+  .icon::after {
+    font-family: $ionicons-font-family;
+    content: $ionicon-var-ios-search;
+    transform: none;
+    font-size: 20px;
+    top: 0;
+  }
+}

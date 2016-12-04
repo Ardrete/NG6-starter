@@ -1,12 +1,18 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import ngMaterial from 'angular-material';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
+import './vendors/onepage-scroll/jquery.onepage-scroll';
+import './vendors/onepage-scroll/jquery.onepage-scroll.css';
+
 import 'normalize.css';
+import './app.scss';
 
 angular.module('app', [
     uiRouter,
+    ngMaterial,
     Common,
     Components
   ])

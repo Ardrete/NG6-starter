@@ -1,0 +1,28 @@
+@import url("common/ionicons");
+@import 'common/ionicons/scss/ionicons';
+@import 'common/common';
+
+body,
+html {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background: #555;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+body,
+html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.app{
+  height: 100%
+}
