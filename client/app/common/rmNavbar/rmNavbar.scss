@@ -1,18 +1,31 @@
 @import '../common';
 @import '../ionicons/scss/ionicons';
-.navbar {
-  padding-top: 20px;
-  background-color: #fff;
+rm-navbar {
+  background-color: transparent;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 100;
-  border-bottom: 1px #ebebeb solid;
-  .icon::after {
-    font-family: $ionicons-font-family;
-    content: $ionicon-var-ios-search;
-    transform: none;
-    font-size: 20px;
-    top: 0;
+  .-container {
+    display: flex;
+  }
+  .-head {
+    font-size: 40px;
+    padding: 0 15px;
+    color: white;
+  }
+  .-menu {
+    .-icon {
+      cursor: pointer;
+      margin: 5px 5px 0 0;
+      padding: 20px;
+      background-color: black;
+      border: 1px solid white;
+      md-icon {
+        font-size: 30px;
+        color: white;
+      }
+    }
   }
 }
