@@ -1,0 +1,23 @@
+@import '../common';
+$list-item-color-light: rgba($list-item-color, 0.5);
+$list-item-icon-size: 2 * $list-item-font-size;
+$list-item-icon-top-bottom-margin: ($list-item-height - $list-item-icon-size) / 2;
+md-list-item.rm-listitem {
+  font-size: $list-item-font-size;
+  color: $list-item-color;
+  .md-list-item-inner {
+    >md-icon:first-child:not(.md-avatar-icon) {
+      color: $list-item-color-light;
+      font-size: $list-item-icon-size;
+      height: $list-item-icon-size;
+    }
+    font-weight: $list-item-font-weight;
+  }
+  // HOVER
+  &:not([disabled]):hover {
+    color: red;
+    .md-button:not([disabled]):hover {
+      background: none;
+    }
+  }
+}

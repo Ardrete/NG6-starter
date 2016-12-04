@@ -1,6 +1,14 @@
 class RmNavbarController {
-  constructor() {
+  /*@ngInject*/
+  constructor(rmSidebar) {
     this.name = 'rmNavbar';
+    this.component = {
+      sidebar: rmSidebar
+    };
+  }
+
+  toggle() {
+    this.component.sidebar.toggle();
   }
 }
 

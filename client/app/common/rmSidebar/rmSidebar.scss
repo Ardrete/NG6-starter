@@ -1,0 +1,31 @@
+@import '../common';
+rm-sidebar {
+  .-fixed {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: inherit;
+    .-head {
+      font-size: $logo-head-font-size;
+      padding: 11px 20px;
+      color: $logo-head-color;
+      cursor: pointer;
+    }
+  }
+  .md-sidebar-left.rm-sidebar,
+  md-backdrop.md-sidenav-backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .md-sidebar-left.rm-sidebar {
+    background-color: black;
+    opacity: 0.7;
+    md-list {
+      padding: 0;
+    }
+  }
+}

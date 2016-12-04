@@ -3,12 +3,16 @@ import ngAnimate from 'angular-animate';
 import ngMaterial from 'angular-material';
 
 import rmNavbar from './rmNavbar/rmNavbar';
+import rmListItem from './rmListitem/rmListitem';
+import rmSidebar from './rmSidebar/rmSidebar';
 import rmHeader from './rmHeader/rmHeader';
 import rmSection from './rmSection/rmSection';
 import User from './user/user';
 
 let commonModule = angular.module('app.common', [
     rmNavbar,
+    rmSidebar,
+    rmListItem,
     rmHeader,
     rmSection,
     User
