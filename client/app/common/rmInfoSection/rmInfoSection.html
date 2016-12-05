@@ -1,15 +1,13 @@
 <div layout-fill>
-  <div class="-nav"
-    layout="row"
-    layout-align="end end">
-    <div class="-name" ng-transclude="name" >
-
+  <div class="background"></div>
+  <div class="-nav" layout="row" layout-align="end end">
+    <div class="-name" ng-transclude="name">
     </div>
   </div>
-  <div class="-container" layout="column">
-    <div class="-content" ng-transclude="content" layout-fill>
+  <div class="-container">
+    <div class="-info-content" layout-fill ng-transclude="infoContent">
     </div>
   </div>
-  <div class="-translucent" ng-transclude="translucent">
+  <div class="-info-text" ng-transclude="infoText">
   </div>
 </div>

@@ -15,14 +15,7 @@ rm-home {
     float: left;
   }
   .page1 {
-     .background::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: inherit;
+    .background::before {
       @include filter(blur(5px) grayscale(100%));
       background: url(../../common/img/home.jpg) center top no-repeat #555;
     }

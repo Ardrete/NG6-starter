@@ -8,8 +8,8 @@ let rmInfoSectionComponent = {
   template,
   transclude: {
     name: 'name',
-    content: 'content',
-    translucent: 'translucent'
+    infoContent: 'infoContent',
+    infoText: 'infoText'
   },
   controller,
   controllerAs: 'vm'
