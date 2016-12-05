@@ -1,8 +1,5 @@
 @import "compass";
 @import "compass/functions";
-
-
-
 // COLOR
 $color-cardinal: #CD202C;
 $color-red: #FF0000;
@@ -38,21 +35,19 @@ $color-athens-gray-alt: #F6F6F6;
 $color-cerulean: #00ACE7;
 $color-regent-gray: #8D979C;
 $color-black: #000000;
-$color-butterfly-bush : #4F5198;
-$color-rouge : #973679;
-$color-eastern-blue : #24a0a0;
-$color-indochine : #D07500;
+$color-butterfly-bush: #4F5198;
+$color-rouge: #973679;
+$color-eastern-blue: #24a0a0;
+$color-indochine: #D07500;
 $color-mercury: #E8E8E8;
 $color-quilk-gray: #d4d4d0;
-
 // COLOR / STATUS
-$color-success-dark:  $color-goblin;
+$color-success-dark : $color-goblin;
 $color-success-light: $color-chrome-white;
-$color-warning-dark:  $color-golden-bell;
+$color-warning-dark : $color-golden-bell;
 $color-warning-light: $color-frangipani;
-$color-error-dark:  $color-cardinal;
+$color-error-dark : $color-cardinal;
 $color-error-light: $color-cupid;
-
 // MATERIAL
 @function rem($multiplier) {
   $font-size: 10px;
@@ -87,7 +82,7 @@ $scroll-bar-width-roomy: 23px;
 // MATERIAL / FONTS
 $font-family: 'ClanOT',
 sans-serif;
-$font-size : 10px;
+$font-size: 10px;
 $title-font-size-base: rem(1.8);
 $h1-font-size: title-font-size-base;
 $h2-font-size: rem(2.0);
@@ -236,7 +231,7 @@ $table-header-hover-color: $color-alto;
 $table-row-height: rem(3.6);
 $table-row-selected-color: $color-blizzard-blue;
 // COMPONENT / TOOLTIP
-$tooltip-triangle-width : rem(0.4);
+$tooltip-triangle-width: rem(0.4);
 $tooltip-triangle-height: rem(0.6);
 $tooltip-max-width: rem(30.0);
 $tooltip-backgrownd: $color-alto;
@@ -244,8 +239,25 @@ $tooltip-color: $color-mine-shaft;
 $tooltip-font-size: rem(1.2);
 $tooltip-font-weight: normal;
 $tooltip-padding: rem(1.0) rem(1.6);
-
 //Navbar
 $logo-head-color: $color-white;
 $logo-head-font-size: 40px;
 $logo-head-padding: 0 20px;
+
+$circle-border-size: 10em;
+$circle-radius: $circle-border-size/2;
+
+.-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $circle-border-size;
+  height: $circle-border-size;
+  color: white;
+  background: black;
+  font-weight: bold;
+  font-size: 20px;
+  -moz-border-radius: $circle-radius;
+  -webkit-border-radius: $circle-radius;
+  border-radius: $circle-radius;
+}

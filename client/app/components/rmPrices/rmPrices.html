@@ -1,0 +1,22 @@
+<div class="-main">
+  <rm-section>
+    <div class="-container" layout="row">
+      <div layout="column" flex="80">
+        <div class="-head" layout="row" layout-align="start end">
+          <span>Premios</span>
+        </div>
+        <div class="-list" layout="row" layout-wrap>
+          <span ng-repeat="(key, item) in vm.prices track by key" flex="50">
+            {{item}}
+          </span>
+        </div>
+      </div>
+      <div class="-image" flex="20">
+        <img src="{{vm.trophy}}" alt="">
+      </div>
+    </div>
+  </rm-section>
+  <rm-section>
+
+  </rm-section>
+</div>

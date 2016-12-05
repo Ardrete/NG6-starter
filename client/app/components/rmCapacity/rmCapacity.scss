@@ -1,5 +1,5 @@
 @import '../../common/common.scss';
-rm-company {
+rm-capacity {
   .-nav {
     background: #E2E3DB;
   }
@@ -7,7 +7,7 @@ rm-company {
     .-info-content {
       &::before {
         @include filter(grayscale(100%));
-        background: url(../../common/img/company-background.jpg) center top no-repeat #555;
+        background: url(../../common/img/capacity-background.jpg) center top no-repeat #555;
       }
       info-content {
         display: flex;
@@ -21,6 +21,6 @@ rm-company {
     }
   }
   .-info-text {
-    background: purple;
+    background: deepskyblue;
   }
 }

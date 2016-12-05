@@ -1,50 +1,54 @@
-<md-sidenav class="md-sidebar-left rm-sidebar"
- md-component-id="sidebar">
+<md-sidenav class="md-sidebar-left rm-sidebar" md-component-id="sidebar">
   <div class="-fixed">
     <div class="-head" ui-sref="home">
       <hi>romo</hi>
     </div>
   </div>
-  <md-list>
-    <rm-listitem
-      ng-click="nav('company')"
-      aria-label="Company">
+  <md-list class="-list">
+    <rm-listitem ng-click="nav('company')" aria-label="Company">
       Compañia
     </rm-listitem>
-    <rm-listitem
-     ng-click="nav('history')"
-     aria-label="History">
-      Historia
-    </rm-listitem>
-    <rm-listitem
-     ng-click="nav('infrastructure')"
-     aria-label="Infraestructure">
+    <rm-listitem ng-click="nav('infrastructure')" aria-label="Infraestructure">
       Infraestructura
     </rm-listitem>
-    <rm-listitem
-     ng-click="nav('capacity')"
-     aria-label="Capacity">
+    <rm-listitem ng-click="nav('capacity')" aria-label="Capacity">
       Capacidades
     </rm-listitem>
-    <rm-listitem
-     ng-click="nav('Projects')"
-     aria-label="Projects">
+    <rm-listitem ng-click="nav('projects')" aria-label="Projects">
       Proyectos
     </rm-listitem>
-    <rm-listitem
-     ng-click="nav('prices')"
-     aria-label="Prices">
+    <rm-listitem ng-click="nav('prices')" aria-label="Prices">
       Premios
     </rm-listitem>
-    <rm-listitem
-     ng-click="nav('faq')"
-     aria-label="Faq">
+    <rm-listitem ng-click="nav('human-factor')" aria-label="HumanFactor">
+      Factor Humano
+    </rm-listitem>
+    <rm-listitem ng-click="nav('faq')" aria-label="Faq">
       FAQs
     </rm-listitem>
-    <rm-listitem
-     ng-click="nav('contact')"
-     aria-label="Contact">
+    <rm-listitem ng-click="nav('contact')" aria-label="Contact">
       Contacto
     </rm-listitem>
   </md-list>
+  <div layout="column" class="-links">
+    <div class="-title">Siguenos</div>
+    <section layout="row" layout-align="center center" layout-wrap>
+      <a href="https://www.twitter.com">
+        <md-icon md-font-icon="Ionicons" class="ion-social-twitter">
+        </md-icon>
+      </a>
+      <a href="https://www.facebook.com">
+        <md-icon md-font-icon="Ionicons" class="ion-social-facebook"></md-icon>
+      </a>
+      <a href="https://www.youtube.com">
+        <md-icon md-font-icon="Ionicons" class="ion-social-youtube"></md-icon>
+      </a>
+      <a href="https://www.instagram.com">
+        <md-icon md-font-icon="Ionicons" class="ion-social-instagram"></md-icon>
+      </a>
+      <a href="mailto:mail@romo.com">
+        <md-icon md-font-icon="Ionicons" class="ion-android-mail"></md-icon>
+      </a>
+    </section>
+  </div>
 </md-sidenav>

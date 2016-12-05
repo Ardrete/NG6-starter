@@ -1,4 +1,5 @@
 import logo from '../../common/img/logo.png';
+import years from '../../common/img/years2.png';
 
 class RmHomeController {
   /*@ngInject*/
@@ -7,6 +8,7 @@ class RmHomeController {
     this.$element = $element;
     this.$timeout = $timeout;
     this.logo = logo;
+    this.years = years;
     this.oneScrollOptions = {
       sectionContainer: 'section',
       easing: 'cubic-bezier(0.175, 0.885, 0.420, 1.310)'

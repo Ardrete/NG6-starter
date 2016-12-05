@@ -1,7 +1,7 @@
 @import '../common.scss';
-$nav-heigth: 12%;
-$content-height: 88%;
-rm-info-section {
+$nav-heigth: 10%;
+$content-height: 90%;
+.rm-info-section {
   .-nav {
     height: $nav-heigth;
     border: 1px solid gray;
@@ -34,6 +34,8 @@ rm-info-section {
       top: $nav-heigth;
       left: 0;
       z-index: 0;
+      height: $content-height;
+      width: 100%;
     }
   }
   .-info-text {
@@ -47,9 +49,10 @@ rm-info-section {
     info-text {
       display: block;
       color: white;
-      font-size: 19px;
+      font-size: 20px;
       font-weight: bold;
-      padding: 2em 2em 1em 2em;
+      text-align: left;
+      padding: 3em 2em 1em 2em;
     }
   }
 }

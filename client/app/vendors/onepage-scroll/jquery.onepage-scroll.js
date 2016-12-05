@@ -75,7 +75,7 @@
   $.fn.onepage_scroll = function (options) {
     var settings = $.extend({}, defaults, options),
       el = $(this),
-      sections = $(settings.sectionContainer),
+      sections = $(settings.sectionContainer, el),
       total = sections.length,
       status = "off",
       topPos = 0,
@@ -254,7 +254,7 @@
   $.fn.destroy_onepage_scroll = function (options) {
     var settings = $.extend({}, defaults, options);
     var el = $(this);
-    var sections = $(settings.sectionContainer);
+    var sections = $(settings.sectionContainer, el);
 
     $('html').css('overflow', '').css('height', '');
     $('body').css('overflow', '').css('height', '');

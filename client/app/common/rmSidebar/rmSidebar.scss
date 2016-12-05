@@ -15,6 +15,26 @@ rm-sidebar {
       cursor: pointer;
     }
   }
+  .-links {
+    position: absolute;
+    bottom: 2em;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    .-title{
+    padding: 15px 10px;
+    }
+    md-icon {
+      &:hover{
+        color: red;
+
+      }
+      cursor: pointer;
+      padding: 0 10px;
+      font-size: 30px;
+      color: white;
+    }
+  }
   .md-sidebar-left.rm-sidebar,
   md-backdrop.md-sidenav-backdrop {
     display: flex;

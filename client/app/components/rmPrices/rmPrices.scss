@@ -1,0 +1,26 @@
+rm-prices {
+  display: block;
+  background-color: #E2E3DB;
+  .-container{
+    padding: 0 7em;
+    margin-top: 8%;
+    .-head{
+      height: 1.5em;
+      font-size: 7em;
+      font-weight: 500;
+      color: white;
+      margin-left: -8px;
+    }
+    .-list{
+      span{
+        text-align: start;
+        margin: 3px 0;
+      }
+    }
+    .-image{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+}

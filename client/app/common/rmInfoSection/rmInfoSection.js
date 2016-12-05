@@ -1,12 +1,10 @@
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
-import rmInfoSectionComponent from './rmInfoSection.component';
+import rmInfoSectionDirective from './rmInfoSection.directive';
 
 let rmInfoSectionModule = angular.module('rmInfoSection', [
-  uiRouter
 ])
 
-.component('rmInfoSection', rmInfoSectionComponent)
+.directive('rmInfoSection', () => new rmInfoSectionDirective())
 
 .name;
 

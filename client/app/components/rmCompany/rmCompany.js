@@ -12,7 +12,6 @@ let rmCompanyModule = angular.module('rmCompany', [
     $stateProvider
       .state('company', {
         url: '/company',
-        // component: 'rmCompany'
         template: '<rm-company layout-fill></rm-company>'
       });
   })
