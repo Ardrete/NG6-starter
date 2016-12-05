@@ -6,6 +6,7 @@ import Components from './components/components';
 import AppComponent from './app.component';
 import './vendors/onepage-scroll/jquery.onepage-scroll';
 import './vendors/onepage-scroll/jquery.onepage-scroll.css';
+import 'slick-carousel';
 
 import 'normalize.css';
 import './app.scss';

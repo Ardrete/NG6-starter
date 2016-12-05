@@ -1,7 +1,7 @@
 <!-- Place all UI elements intended to be present across all routes in this file -->
 <rm-sidebar></rm-sidebar>
 <div layout-fill>
-  <rm-navbar>
+  <rm-navbar ng-show="vm.services.user.hasNavBar()">
   </rm-navbar>
   <div class="app" ui-view layout-fill layout>
   </div>
