@@ -45,7 +45,6 @@
     "gulp-util": "^3.0.7",
     "html-webpack-plugin": "^1.7.0",
     "image-webpack-loader": "3.0.0",
-    "ionicons": "3.0.0",
     "karma": "^0.13.22",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.2.0",
