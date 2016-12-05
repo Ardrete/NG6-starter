@@ -16,7 +16,7 @@ rm-home {
   }
   .page1 {
     .background::before {
-      @include filter(blur(5px) grayscale(100%));
+      @include filter(blur(3px) grayscale(100%));
       background: url(../../common/img/home.jpg) center top no-repeat #555;
     }
     display: flex;
