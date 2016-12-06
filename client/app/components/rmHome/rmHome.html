@@ -1,14 +1,15 @@
 <div class="main">
   <rm-section class="page1">
-      <div class="-images" layout="column" layout-fill>
-        <img src="{{vm.logo}}" />
-        <img class="-year" src="{{vm.years}}">
-      </div>
+    <div class="-images" layout="column" layout-fill>
+      <img src="{{vm.logo}}" />
+      <img class="-year" src="{{vm.years}}">
+    </div>
   </rm-section>
   <rm-section class="page2">
-
-  </rm-section>
-  <rm-section class="page3">
-
+    <div class="-carousel">
+      <div class="-image" ng-repeat="image in ::vm.books" flex="nogrow">
+        <img src="{{::image}}">
+      </div>
+    </div>
   </rm-section>
 </div>
