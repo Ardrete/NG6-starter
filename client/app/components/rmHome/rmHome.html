@@ -6,6 +6,19 @@
     </div>
   </rm-section>
   <rm-section class="page2">
+    <div class="-float-icon -slide-left">
+      <md-icon
+        md-font-icon="Ionicons"
+        ng-click="vm.slideLeft()"
+        class="ion-ios-arrow-left">
+      </md-icon>
+    </div>
+    <div class="-float-icon -slide-right">
+      <md-icon md-font-icon="Ionicons"
+        ng-click="vm.slideRight()"
+        class="ion-ios-arrow-right">
+      </md-icon>
+    </div>
     <div class="-carousel">
       <div class="-image" ng-repeat="item in ::vm.books" flex="nogrow" layout="column">
         <img src="{{::item.image}}">

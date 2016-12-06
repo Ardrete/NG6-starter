@@ -73,6 +73,7 @@ class RmHomeController {
   $onDestroy() {
     this.$timeout(() => {
       $('.main', this.$element).destroy_onepage_scroll(this.oneScrollOptions);
+      this.carousel.slick('unslick');
     });
     this.services.user.setNavBar(true);
   }
@@ -80,7 +81,8 @@ class RmHomeController {
   $postLink() {
     this.$timeout(() => {
       $('.main', this.$element).onepage_scroll(this.oneScrollOptions);
-      $('.-carousel', this.$element).slick(this.slickOptions);
+      this.carousel = $('.-carousel', this.$element);
+      this.carousel.slick(this.slickOptions);
     });
   }
 
@@ -92,6 +94,14 @@ class RmHomeController {
       this.services.user.setNavBar(true);
       this.services.user.setNavButton(true);
     }
+  }
+
+  slideLeft() {
+    this.carousel.slick('slickNext');
+  }
+
+  slideRight() {
+    this.carousel.slick('slickPrev');
   }
 }
 
