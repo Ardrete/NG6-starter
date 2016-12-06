@@ -18,16 +18,31 @@ class RmHomeController {
     this.$timeout = $timeout;
     this.$scope = $scope;
 
-    this.books = [
-      book1,
-      book2,
-      book3,
-      book4,
-      book5,
-      book6,
-      book7,
-      book8
-    ];
+    this.books = [{
+      image: book1,
+      name: 'Libro Alas de la Ciudad'
+    }, {
+      image: book2,
+      name: 'Libro Retrotabula'
+    }, {
+      image: book3,
+      name: 'Libro México'
+    }, {
+      image: book4,
+      name: 'Libro Habeas Corpus'
+    }, {
+      image: book5,
+      name: 'Libro La Patria'
+    }, {
+      image: book6,
+      name: 'Libro 14 Flores'
+    }, {
+      image: book7,
+      name: 'Libro Regalos'
+    }, {
+      image: book8,
+      name: 'Libro De los Moles'
+    }];
 
     this.services = {
       user: User
@@ -43,9 +58,11 @@ class RmHomeController {
 
     this.slickOptions = {
       centerMode: true,
-      centerPadding: '60px',
+      centerPadding: '90px',
+      adaptiveHeight: true,
       slidesToShow: 3,
-      arrows: true
+      arrows: false,
+      focusOnSelect: true
     };
   }
   $onInit() {

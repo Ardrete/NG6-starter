@@ -7,8 +7,11 @@
   </rm-section>
   <rm-section class="page2">
     <div class="-carousel">
-      <div class="-image" ng-repeat="image in ::vm.books" flex="nogrow">
-        <img src="{{::image}}">
+      <div class="-image" ng-repeat="item in ::vm.books" flex="nogrow" layout="column">
+        <img src="{{::item.image}}">
+        <div class="-name">
+          {{::item.name}}
+        </div>
       </div>
     </div>
   </rm-section>
