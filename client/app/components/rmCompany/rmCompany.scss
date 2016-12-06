@@ -3,24 +3,47 @@ rm-company {
   .-nav {
     background: #E2E3DB;
   }
-  .-container {
-    .-info-content {
-      &::before {
-        @include filter(grayscale(100%));
-        background: url(../../common/img/company-background.jpg) center top no-repeat #555;
-      }
-      info-content {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
-        .-circle {
-          margin-bottom: 50px;
-          margin-left: 30px;
+  .page-1 {
+    .-container {
+      .-info-content {
+        &::before {
+          @include filter(grayscale(100%));
+          background: url(../../common/img/company-background.jpg) center top no-repeat #555;
+        }
+        info-content {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          .-circle {
+            margin-bottom: 50px;
+            margin-left: 30px;
+          }
         }
       }
     }
+    .-info-text {
+      background: purple;
+    }
   }
-  .-info-text {
-    background: purple;
+  .page-2 {
+    .-container {
+      .-info-content {
+        &::before {
+          background: url(../../common/img/company2-background.jpg) center top no-repeat #555;
+        }
+        info-content {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          .-circle {
+            margin-bottom: 50px;
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+    .-info-text {
+      background: #B8171D;
+    }
   }
 }

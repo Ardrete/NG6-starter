@@ -52,8 +52,7 @@ module.exports = {
     // `includePaths` is optional
     includePaths: [
       path.resolve(__dirname, './node_modules/compass-mixins/lib'),
-      path.resolve(__dirname, "./node_modules/ionic-angular/"),
-      path.resolve(__dirname, "./node_modules/ionicons/dist/scss/")
+      path.resolve(__dirname, './node_modules/ionicons/dist/scss/')
     ]
   },
   plugins: [
