@@ -23,6 +23,7 @@ class RmHomeController {
   }
   $onInit() {
     this.services.user.setNavBar(false);
+    this.services.user.setNavButton(false);
   }
 
   $onDestroy() {
@@ -41,8 +42,10 @@ class RmHomeController {
   onBeforeMove(page) {
     if (page === 1) {
       this.services.user.setNavBar(false);
+      this.services.user.setNavButton(false);
     } else {
       this.services.user.setNavBar(true);
+      this.services.user.setNavButton(true);
     }
   }
 }

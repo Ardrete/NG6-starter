@@ -1,6 +1,7 @@
 let UserFactory = function () {
   const user = {};
   let enableNavBar = true;
+  let enableNavButton = false;
 
   let getUser = () => {
     return user;
@@ -18,11 +19,21 @@ let UserFactory = function () {
     enableNavBar = value;
   };
 
+  let setNavButton = (value) => {
+    enableNavButton = value;
+  };
+
+  let hasNavButton = () => {
+    return enableNavButton;
+  };
+
   return {
     getUser,
     isSignedIn,
     hasNavBar,
-    setNavBar
+    setNavBar,
+    setNavButton,
+    hasNavButton
   };
 };
 
