@@ -251,6 +251,7 @@ $circle-radius: $circle-border-size/2;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
   width: $circle-border-size;
   height: $circle-border-size;
   color: white;
@@ -260,4 +261,8 @@ $circle-radius: $circle-border-size/2;
   -moz-border-radius: $circle-radius;
   -webkit-border-radius: $circle-radius;
   border-radius: $circle-radius;
+  &.-white{
+    color: black;
+    background: white;
+  }
 }

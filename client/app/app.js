@@ -10,6 +10,7 @@ import 'slick-carousel';
 
 import 'normalize.css';
 import './app.scss';
+import './app.styl';
 
 angular.module('app', [
     uiRouter,
