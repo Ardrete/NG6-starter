@@ -264,6 +264,11 @@ $circle-font-size: 18px;
     color: black;
     background: white;
   }
+  &.-gold {
+    color: white;
+    background: #F4B100;
+    font-size: 20px;
+  }
   &.-small {
     font-size: $circle-font-size/2;
     width: $circle-border-size/2;

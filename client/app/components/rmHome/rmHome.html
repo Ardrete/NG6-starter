@@ -35,7 +35,7 @@
       <div ng-repeat="(key, section) in ::vm.imageSelected.sections"
         ng-click="vm.nav(section.link)"
         id="section-{{key}}"
-        class="-circle -white -section-link scaling">
+        class="-circle {{section.class || -white}} -section-link scaling">
         <span>
           {{section.name}}
         </span>

@@ -35,6 +35,9 @@ class RmHomeController {
         name: 'Distribucion',
         link: 'distribution'
       }, {
+        name: 'Medalla de Oro SAPPI',
+        class: '-gold'
+      }, {
         name: 'Diseño',
         link: 'design'
       }, {
