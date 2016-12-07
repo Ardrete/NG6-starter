@@ -18,6 +18,10 @@ $content-height: 90%;
   }
   .-container {
     height: $content-height;
+    min-height: $content-height;
+    width: 100%;
+    top: $nav-heigth;
+    left: 0;
     .-info-content::before {
       content: '';
       position: absolute;
@@ -26,14 +30,14 @@ $content-height: 90%;
       bottom: 0;
       left: 0;
     }
-    info-content {
-      display: block;
-      top: $nav-heigth;
-      left: 0;
-      z-index: 0;
-      height: $content-height;
-      width: 100%;
-      position: relative;
+    .-info-content {
+      info-content {
+        display: block;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
     }
   }
   .-info-text {

@@ -18,16 +18,16 @@ rm-sidebar {
   .-links {
     position: absolute;
     bottom: 2em;
+    left: 15vh;
     color: white;
     font-weight: 500;
     text-align: left;
-    .-title{
-    padding: 15px 10px;
+    .-title {
+      padding: 15px 10px;
     }
     md-icon {
-      &:hover{
+      &:hover {
         color: red;
-
       }
       cursor: pointer;
       padding: 0 10px;
