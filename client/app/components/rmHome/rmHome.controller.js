@@ -2,7 +2,6 @@ import logo from '../../common/img/logo.png';
 import years from '../../common/img/years2.png';
 
 import book1 from '../../common/img/book1.jpg';
-import bookOpen1 from '../../common/img/book-open1.jpg';
 import book2 from '../../common/img/book2.jpg';
 import book3 from '../../common/img/book3.jpg';
 import book4 from '../../common/img/book4.jpg';
@@ -10,6 +9,14 @@ import book5 from '../../common/img/book5.jpg';
 import book6 from '../../common/img/book6.jpg';
 import book7 from '../../common/img/book7.jpg';
 import book8 from '../../common/img/book8.jpg';
+import bookOpen1 from '../../common/img/book-open1.jpg';
+import bookOpen2 from '../../common/img/book-open2.jpg';
+import bookOpen3 from '../../common/img/book-open3.jpg';
+import bookOpen4 from '../../common/img/book-open4.jpg';
+import bookOpen5 from '../../common/img/book-open5.jpg';
+import bookOpen6 from '../../common/img/book-open6.jpg';
+import bookOpen7 from '../../common/img/book-open7.jpg';
+import bookOpen8 from '../../common/img/book-open8.jpg';
 
 class RmHomeController {
   /*@ngInject*/
@@ -26,49 +33,40 @@ class RmHomeController {
       imageOpen: bookOpen1,
       sections: [{
         name: 'Distribucion',
-        link: 'distribucion'
+        link: 'distribution'
       }, {
         name: 'Diseño',
-        link: 'disenio'
+        link: 'design'
       }, {
         name: 'Fotografia',
-        link: 'fotografia'
-      }, {
-        name: 'Impresion',
-        link: 'impresion'
-      }, {
-        name: 'Empaque',
-        link: 'empaque'
-      }, {
-        name: 'Video',
-        link: 'video'
+        link: 'photography'
       }, {
         name: 'Premedia',
         link: 'premedia'
       }, {
         name: 'Premios',
-        link: 'premios'
+        link: 'prices'
       }, {
         name: 'Cuidado edicion',
-        link: 'cuidado'
+        link: 'editionCare'
       }]
 
     }, {
       image: book2,
       name: 'Libro Retrotabula',
-      imageOpen: bookOpen1,
+      imageOpen: bookOpen2,
       sections: [{
         name: 'Distribucion',
-        link: 'distribucion'
+        link: 'distribution'
       }, {
         name: 'Diseño',
-        link: 'disenio'
+        link: 'design'
       }, {
         name: 'Fotografia',
-        link: 'fotografia'
+        link: 'photography'
       }, {
         name: 'Impresion',
-        link: 'impresion'
+        link: 'printing'
       }, {
         name: 'Video',
         link: 'video'
@@ -79,13 +77,13 @@ class RmHomeController {
     }, {
       image: book3,
       name: 'Libro México',
-      imageOpen: bookOpen1,
+      imageOpen: bookOpen3,
       sections: [{
         name: 'Distribucion',
-        link: 'distribucion'
+        link: 'distribution'
       }, {
         name: 'Empaque',
-        link: 'empaque'
+        link: 'packing'
       }, {
         name: 'Video',
         link: 'video'
@@ -94,21 +92,21 @@ class RmHomeController {
         link: 'premedia'
       }, {
         name: 'Premios',
-        link: 'premios'
+        link: 'prices'
       }, {
         name: 'Cuidado edicion',
-        link: 'cuidado'
+        link: 'editionCare'
       }]
     }, {
       image: book4,
       name: 'Libro Habeas Corpus',
-      imageOpen: bookOpen1,
+      imageOpen: bookOpen4,
       sections: [{
         name: 'Impresion',
-        link: 'impresion'
+        link: 'printing'
       }, {
         name: 'Empaque',
-        link: 'empaque'
+        link: 'packing'
       }, {
         name: 'Video',
         link: 'video'
@@ -117,24 +115,24 @@ class RmHomeController {
         link: 'premedia'
       }, {
         name: 'Premios',
-        link: 'premios'
+        link: 'prices'
       }, {
         name: 'Cuidado edicion',
-        link: 'cuidado'
+        link: 'editionCare'
       }]
     }, {
       image: book5,
       name: 'Libro La Patria',
-      imageOpen: bookOpen1,
+      imageOpen: bookOpen5,
       sections: [{
         name: 'Distribucion',
-        link: 'distribucion'
+        link: 'distribution'
       }, {
         name: 'Fotografia',
-        link: 'fotografia'
+        link: 'photography'
       }, {
         name: 'Impresion',
-        link: 'impresion'
+        link: 'printing'
       }, {
         name: 'Video',
         link: 'video'
@@ -143,21 +141,21 @@ class RmHomeController {
         link: 'premedia'
       }, {
         name: 'Premios',
-        link: 'premios'
+        link: 'prices'
       }, {
         name: 'Cuidado edicion',
-        link: 'cuidado'
+        link: 'editionCare'
       }]
     }, {
       image: book6,
       name: 'Libro 14 Flores',
-      imageOpen: bookOpen1,
+      imageOpen: bookOpen6,
       sections: [{
         name: 'Distribucion',
-        link: 'distribucion'
+        link: 'distribution'
       }, {
         name: 'Empaque',
-        link: 'empaque'
+        link: 'packing'
       }, {
         name: 'Video',
         link: 'video'
@@ -166,59 +164,59 @@ class RmHomeController {
         link: 'premedia'
       }, {
         name: 'Premios',
-        link: 'premios'
+        link: 'prices'
       }, {
         name: 'Cuidado edicion',
-        link: 'cuidado'
+        link: 'editionCare'
       }]
     }, {
       image: book7,
       name: 'Libro Regalos',
-      imageOpen: bookOpen1,
+      imageOpen: bookOpen7,
       sections: [{
         name: 'Distribucion',
-        link: 'distribucion'
+        link: 'distribution'
       }, {
         name: 'Diseño',
-        link: 'disenio'
+        link: 'design'
       }, {
         name: 'Fotografia',
-        link: 'fotografia'
+        link: 'photography'
       }, {
         name: 'Premedia',
         link: 'premedia'
       }, {
         name: 'Premios',
-        link: 'premios'
+        link: 'prices'
       }, {
         name: 'Cuidado edicion',
-        link: 'cuidado'
+        link: 'editionCare'
       }]
     }, {
       image: book8,
       name: 'Libro De los Moles',
-      imageOpen: bookOpen1,
+      imageOpen: bookOpen8,
       sections: [{
         name: 'Distribucion',
-        link: 'distribucion'
+        link: 'distribution'
       }, {
         name: 'Diseño',
-        link: 'disenio'
+        link: 'design'
       }, {
         name: 'Fotografia',
-        link: 'fotografia'
+        link: 'photography'
       }, {
         name: 'Impresion',
-        link: 'impresion'
+        link: 'printing'
       }, {
         name: 'Premedia',
         link: 'premedia'
       }, {
         name: 'Premios',
-        link: 'premios'
+        link: 'prices'
       }, {
         name: 'Cuidado edicion',
-        link: 'cuidado'
+        link: 'editionCare'
       }]
     }];
 
@@ -255,6 +253,7 @@ class RmHomeController {
       this.carousel.slick('unslick');
     });
     this.services.user.setNavBar(true);
+    this.services.user.setCloseButton(false);
   }
 
   $postLink() {
@@ -285,14 +284,15 @@ class RmHomeController {
     });
   }
 
-  nav(url){
+  nav(url) {
     this.$state.go(url);
   }
 
-  showDetail(image, $event) {
+  showDetail(image, $event, key) {
     const element = $($event.target).closest('.-image');
 
     if (element.hasClass('slick-current')) {
+      this.slickOptions.initialSlide = key;
       this.imageSelected = image;
       this.services.user.setCloseButton(true, () => this.closeBook());
       this.$timeout(() => {

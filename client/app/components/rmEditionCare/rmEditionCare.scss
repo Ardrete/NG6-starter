@@ -1,0 +1,17 @@
+@import '../../common/common.scss';
+rm-edition-care {
+  .-nav {
+    background: #E2E3DB;
+  }
+  .-container {
+    .-info-content {
+      &::before {
+        @include filter(grayscale(100%));
+        background: url(../../common/img/editioncare-background.jpg) center top no-repeat #555;
+      }
+    }
+  }
+  .-info-text {
+    background: #AF337C;
+  }
+}

@@ -22,7 +22,7 @@
         flex="nogrow"
         layout="column">
         <img ng-src="{{::item.image}}"
-          ng-click="vm.showDetail(item, $event)">
+          ng-click="vm.showDetail(item, $event, key)">
         <div class="-name">
           {{::item.name}}
         </div>
@@ -35,7 +35,7 @@
       <div ng-repeat="(key, section) in ::vm.imageSelected.sections"
         ng-click="vm.nav(section.link)"
         id="section-{{key}}"
-        class="-circle -section-link scaling">
+        class="-circle -white -section-link scaling">
         <span>
           {{section.name}}
         </span>

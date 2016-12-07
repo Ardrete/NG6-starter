@@ -83,6 +83,9 @@ rm-home {
       }
       .-image-detail {
         padding-left: 14vh;
+        img{
+          max-height: 400px;
+        }
         .-section-link {
           position: absolute;
           top: 37%;
@@ -101,8 +104,8 @@ rm-home {
             cursor: pointer;
             &:hover {
               z-index: 15;
-              color: black;
-              background: white;
+              color: white;
+              background: black;
             }
             &#section-0 {
               @include transform(translate(-17em, 3em));
@@ -137,38 +140,6 @@ rm-home {
             &#section-10 {
               @include transform(translate(-9em, -10em));
             }
-            // &.scaling {
-            //   -webkit-animation-name: scalex;
-            //   -webkit-animation-duration: 3s;
-            //   -webkit-animation-iteration-count: infinite;
-            //   -webkit-animation-timing-function: ease-in-out;
-            //   -moz-animation-name: scale;
-            //   -moz-animation-duration: 3s;
-            //   -moz-animation-iteration-count: infinite;
-            //   -moz-animation-timing-function: ease-in-out;
-            // }
-            // @-webkit-keyframes scalex {
-            //   from {
-            //     -webkit-transform: scale(0.9);
-            //   }
-            //   65% {
-            //     -webkit-transform: scale(1.0);
-            //   }
-            //   to {
-            //     -webkit-transform: scale(0.9);
-            //   }
-            // }
-            // @-moz-keyframes scale {
-            //   from {
-            //     -moz-transform: scale(0.9);
-            //   }
-            //   65% {
-            //     -moz-transform: scale(1.0);
-            //   }
-            //   to {
-            //     -moz-transform: scale(0.9);
-            //   }
-            // }
           }
         }
       }
