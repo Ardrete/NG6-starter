@@ -2,6 +2,8 @@ let UserFactory = function () {
   const user = {};
   let enableNavBar = true;
   let enableNavButton = false;
+  let enableCloseButton = false;
+  let callbackClose;
 
   let getUser = () => {
     return user;
@@ -27,13 +29,27 @@ let UserFactory = function () {
     return enableNavButton;
   };
 
+  let setCloseButton = (value, callback) => {
+    enableCloseButton = value;
+    if (_.isFunction(callback)) {
+      callbackClose = callback;
+    }
+  };
+
+  let hasCloseButton = () => {
+    return enableCloseButton;
+  };
+
   return {
     getUser,
     isSignedIn,
     hasNavBar,
     setNavBar,
     setNavButton,
-    hasNavButton
+    hasNavButton,
+    setCloseButton,
+    hasCloseButton,
+    onClose: () => callbackClose()
   };
 };
 

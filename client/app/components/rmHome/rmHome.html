@@ -16,22 +16,30 @@
         </md-icon>
       </div>
     </div>
-    <div class="-carousel" ng-show="!vm.imageSelected">
-      <div class="-image" ng-repeat="(key, item) in ::vm.books" flex="nogrow" layout="column" ng-click="vm.showDetail(item)">
-        <img src="{{::item.image}}">
+    <div class="-carousel"
+      ng-if="!vm.imageSelected">
+      <div class="-image" ng-repeat="(key, item) in ::vm.books"
+        flex="nogrow"
+        layout="column">
+        <img ng-src="{{::item.image}}"
+          ng-click="vm.showDetail(item, $event)">
         <div class="-name">
           {{::item.name}}
         </div>
       </div>
     </div>
-    <div ng-if="!!vm.imageSelected">
-      <img src="{{::vm.imageSelected.imageOpen}}" />
-      <md-tooltip md-autohide="true" md-direction="left">
-        Diseño editorial
-      </md-tooltip>
-      <md-tooltip md-autohide="true" md-direction="right">
-        Fotografia
-      </md-tooltip>
+    <div class="-image-detail"
+      ng-class="{'-transition': vm.showTransition}"
+      ng-if="!!vm.imageSelected">
+      <img ng-src="{{::vm.imageSelected.imageOpen}}" />
+      <div ng-repeat="(key, section) in ::vm.imageSelected.sections"
+        ng-click="vm.nav(section.link)"
+        id="section-{{key}}"
+        class="-circle -section-link scaling">
+        <span>
+          {{section.name}}
+        </span>
+      </div>
     </div>
   </rm-section>
 </div>

@@ -13,37 +13,213 @@ import book8 from '../../common/img/book8.jpg';
 
 class RmHomeController {
   /*@ngInject*/
-  constructor($element, $timeout, $scope, User) {
+  constructor($element, $timeout, $scope, User, $state) {
     this.name = 'rmHome';
     this.$element = $element;
     this.$timeout = $timeout;
     this.$scope = $scope;
+    this.$state = $state;
 
     this.books = [{
       image: book1,
+      name: 'Libro Alas de la Ciudad',
       imageOpen: bookOpen1,
-      name: 'Libro Alas de la Ciudad'
+      sections: [{
+        name: 'Distribucion',
+        link: 'distribucion'
+      }, {
+        name: 'Diseño',
+        link: 'disenio'
+      }, {
+        name: 'Fotografia',
+        link: 'fotografia'
+      }, {
+        name: 'Impresion',
+        link: 'impresion'
+      }, {
+        name: 'Empaque',
+        link: 'empaque'
+      }, {
+        name: 'Video',
+        link: 'video'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Premios',
+        link: 'premios'
+      }, {
+        name: 'Cuidado edicion',
+        link: 'cuidado'
+      }]
+
     }, {
       image: book2,
-      name: 'Libro Retrotabula'
+      name: 'Libro Retrotabula',
+      imageOpen: bookOpen1,
+      sections: [{
+        name: 'Distribucion',
+        link: 'distribucion'
+      }, {
+        name: 'Diseño',
+        link: 'disenio'
+      }, {
+        name: 'Fotografia',
+        link: 'fotografia'
+      }, {
+        name: 'Impresion',
+        link: 'impresion'
+      }, {
+        name: 'Video',
+        link: 'video'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }]
     }, {
       image: book3,
-      name: 'Libro México'
+      name: 'Libro México',
+      imageOpen: bookOpen1,
+      sections: [{
+        name: 'Distribucion',
+        link: 'distribucion'
+      }, {
+        name: 'Empaque',
+        link: 'empaque'
+      }, {
+        name: 'Video',
+        link: 'video'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Premios',
+        link: 'premios'
+      }, {
+        name: 'Cuidado edicion',
+        link: 'cuidado'
+      }]
     }, {
       image: book4,
-      name: 'Libro Habeas Corpus'
+      name: 'Libro Habeas Corpus',
+      imageOpen: bookOpen1,
+      sections: [{
+        name: 'Impresion',
+        link: 'impresion'
+      }, {
+        name: 'Empaque',
+        link: 'empaque'
+      }, {
+        name: 'Video',
+        link: 'video'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Premios',
+        link: 'premios'
+      }, {
+        name: 'Cuidado edicion',
+        link: 'cuidado'
+      }]
     }, {
       image: book5,
-      name: 'Libro La Patria'
+      name: 'Libro La Patria',
+      imageOpen: bookOpen1,
+      sections: [{
+        name: 'Distribucion',
+        link: 'distribucion'
+      }, {
+        name: 'Fotografia',
+        link: 'fotografia'
+      }, {
+        name: 'Impresion',
+        link: 'impresion'
+      }, {
+        name: 'Video',
+        link: 'video'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Premios',
+        link: 'premios'
+      }, {
+        name: 'Cuidado edicion',
+        link: 'cuidado'
+      }]
     }, {
       image: book6,
-      name: 'Libro 14 Flores'
+      name: 'Libro 14 Flores',
+      imageOpen: bookOpen1,
+      sections: [{
+        name: 'Distribucion',
+        link: 'distribucion'
+      }, {
+        name: 'Empaque',
+        link: 'empaque'
+      }, {
+        name: 'Video',
+        link: 'video'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Premios',
+        link: 'premios'
+      }, {
+        name: 'Cuidado edicion',
+        link: 'cuidado'
+      }]
     }, {
       image: book7,
-      name: 'Libro Regalos'
+      name: 'Libro Regalos',
+      imageOpen: bookOpen1,
+      sections: [{
+        name: 'Distribucion',
+        link: 'distribucion'
+      }, {
+        name: 'Diseño',
+        link: 'disenio'
+      }, {
+        name: 'Fotografia',
+        link: 'fotografia'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Premios',
+        link: 'premios'
+      }, {
+        name: 'Cuidado edicion',
+        link: 'cuidado'
+      }]
     }, {
       image: book8,
-      name: 'Libro De los Moles'
+      name: 'Libro De los Moles',
+      imageOpen: bookOpen1,
+      sections: [{
+        name: 'Distribucion',
+        link: 'distribucion'
+      }, {
+        name: 'Diseño',
+        link: 'disenio'
+      }, {
+        name: 'Fotografia',
+        link: 'fotografia'
+      }, {
+        name: 'Impresion',
+        link: 'impresion'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Premios',
+        link: 'premios'
+      }, {
+        name: 'Cuidado edicion',
+        link: 'cuidado'
+      }]
     }];
 
     this.services = {
@@ -70,6 +246,7 @@ class RmHomeController {
   $onInit() {
     this.services.user.setNavBar(false);
     this.services.user.setNavButton(false);
+    this.services.user.setCloseButton(false);
   }
 
   $onDestroy() {
@@ -98,8 +275,30 @@ class RmHomeController {
     }
   }
 
-  showDetail(image) {
-    this.imageSelected = image;
+  closeBook() {
+    this.imageSelected = null;
+    this.showTransition = false;
+    this.services.user.setCloseButton(false);
+    this.$timeout(() => {
+      this.carousel = $('.-carousel', this.$element);
+      this.carousel.slick(this.slickOptions);
+    });
+  }
+
+  nav(url){
+    this.$state.go(url);
+  }
+
+  showDetail(image, $event) {
+    const element = $($event.target).closest('.-image');
+
+    if (element.hasClass('slick-current')) {
+      this.imageSelected = image;
+      this.services.user.setCloseButton(true, () => this.closeBook());
+      this.$timeout(() => {
+        this.showTransition = true;
+      }, 500);
+    }
   }
 
   slideLeft() {

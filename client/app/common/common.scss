@@ -42,11 +42,11 @@ $color-indochine: #D07500;
 $color-mercury: #E8E8E8;
 $color-quilk-gray: #d4d4d0;
 // COLOR / STATUS
-$color-success-dark : $color-goblin;
+$color-success-dark: $color-goblin;
 $color-success-light: $color-chrome-white;
-$color-warning-dark : $color-golden-bell;
+$color-warning-dark: $color-golden-bell;
 $color-warning-light: $color-frangipani;
-$color-error-dark : $color-cardinal;
+$color-error-dark: $color-cardinal;
 $color-error-light: $color-cupid;
 // MATERIAL
 @function rem($multiplier) {
@@ -243,26 +243,33 @@ $tooltip-padding: rem(1.0) rem(1.6);
 $logo-head-color: $color-white;
 $logo-head-font-size: 40px;
 $logo-head-padding: 0 20px;
-
 $circle-border-size: 10em;
 $circle-radius: $circle-border-size/2;
-
+$circle-font-size: 20px;
 .-circle {
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0.8;
-  width: $circle-border-size;
-  height: $circle-border-size;
   color: white;
   background: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: $circle-font-size;
+  width: $circle-border-size;
+  height: $circle-border-size;
   -moz-border-radius: $circle-radius;
   -webkit-border-radius: $circle-radius;
   border-radius: $circle-radius;
-  &.-white{
+  &.-white {
     color: black;
     background: white;
+  }
+  &.-small {
+    font-size: $circle-font-size/2;
+    width: $circle-border-size/2;
+    height: $circle-border-size/2;
+    -moz-border-radius: $circle-radius/2;
+    -webkit-border-radius: $circle-radius/2;
+    border-radius: $circle-radius/2;
   }
 }

@@ -65,12 +65,13 @@ rm-home {
       .-float-icon {
         position: absolute;
         font-size: 83px;
-        top: 40%;
         z-index: 10;
         &.-slide-left {
+          top: 40%;
           left: 30px;
         }
         &.-slide-right {
+          top: 40%;
           right: 30px;
         }
         md-icon {
@@ -78,6 +79,97 @@ rm-home {
           color: #050505;
           height: 90px;
           width: 80px;
+        }
+      }
+      .-image-detail {
+        padding-left: 14vh;
+        .-section-link {
+          position: absolute;
+          top: 37%;
+          left: 46%;
+          visibility: hidden;
+          opacity: 0;
+          @include transition(visibility 1s, opacity 1.5s linear);
+          @include transition(1s ease-in-out);
+          @include transform(scale(-1));
+        }
+        &.-transition {
+          .-section-link {
+            visibility: visible;
+            opacity: 0.7;
+            @include transform(scale(1));
+            cursor: pointer;
+            &:hover {
+              z-index: 15;
+              color: black;
+              background: white;
+            }
+            &#section-0 {
+              @include transform(translate(-17em, 3em));
+            }
+            &#section-1 {
+              @include transform(translate(17em, 11em));
+            }
+            &#section-2 {
+              @include transform(translate(-14em, -7em));
+            }
+            &#section-3 {
+              @include transform(translate(-5em, -13em));
+            }
+            &#section-4 {
+              @include transform(translate(6em, -14em));
+            }
+            &#section-5 {
+              @include transform(translate(18em, -10em));
+            }
+            &#section-6 {
+              @include transform(translate(20em, 1em));
+            }
+            &#section-7 {
+              @include transform(translate(-10em, 13em));
+            }
+            &#section-8 {
+              @include transform(translate(7em, 13em));
+            }
+            &#section-9 {
+              @include transform(translate(14em, -10em));
+            }
+            &#section-10 {
+              @include transform(translate(-9em, -10em));
+            }
+            // &.scaling {
+            //   -webkit-animation-name: scalex;
+            //   -webkit-animation-duration: 3s;
+            //   -webkit-animation-iteration-count: infinite;
+            //   -webkit-animation-timing-function: ease-in-out;
+            //   -moz-animation-name: scale;
+            //   -moz-animation-duration: 3s;
+            //   -moz-animation-iteration-count: infinite;
+            //   -moz-animation-timing-function: ease-in-out;
+            // }
+            // @-webkit-keyframes scalex {
+            //   from {
+            //     -webkit-transform: scale(0.9);
+            //   }
+            //   65% {
+            //     -webkit-transform: scale(1.0);
+            //   }
+            //   to {
+            //     -webkit-transform: scale(0.9);
+            //   }
+            // }
+            // @-moz-keyframes scale {
+            //   from {
+            //     -moz-transform: scale(0.9);
+            //   }
+            //   65% {
+            //     -moz-transform: scale(1.0);
+            //   }
+            //   to {
+            //     -moz-transform: scale(0.9);
+            //   }
+            // }
+          }
         }
       }
     }

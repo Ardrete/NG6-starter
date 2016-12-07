@@ -3,12 +3,18 @@
     <hi>romo</hi>
   </div>
   <div class="-menu">
+    <div class="-icon" ng-show="vm.services.user.hasCloseButton()">
+      <md-icon
+        ng-click="vm.services.user.onClose()"
+        md-font-icon="Ionicons"
+        class="ion-android-close">
+      </md-icon>
+    </div>
     <div class="-icon">
       <md-icon
         md-font-icon="Ionicons"
         class="ion-navicon"
-        ng-click="vm.toggle()"
-      >
+        ng-click="vm.toggle()">
       </md-icon>
     </div>
   </div>
