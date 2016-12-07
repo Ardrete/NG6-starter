@@ -15,14 +15,14 @@ rm-home {
     float: left;
   }
   .page1 {
-    .background::before {
+    .page-container::before {
       @include filter(blur(5px) grayscale(100%));
       background: url(../../common/img/home.jpg) center top no-repeat #555;
     }
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .-year {
         position: absolute;
         bottom: -1em;

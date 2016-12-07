@@ -1,31 +1,37 @@
 <div class="main">
   <rm-section class="page1">
-    <div class="-images" layout="column" layout-fill>
+    <div class="-images" layout-fill>
       <img src="{{vm.logo}}" />
       <img class="-year" src="{{vm.years}}">
     </div>
   </rm-section>
   <rm-section class="page2">
-    <div class="-float-icon -slide-left">
-      <md-icon
-        md-font-icon="Ionicons"
-        ng-click="vm.slideLeft()"
-        class="ion-ios-arrow-left">
-      </md-icon>
+    <div ng-if="!vm.imageSelected">
+      <div class="-float-icon -slide-left">
+        <md-icon md-font-icon="Ionicons" ng-click="vm.slideLeft()" class="ion-ios-arrow-left">
+        </md-icon>
+      </div>
+      <div class="-float-icon -slide-right">
+        <md-icon md-font-icon="Ionicons" ng-click="vm.slideRight()" class="ion-ios-arrow-right">
+        </md-icon>
+      </div>
     </div>
-    <div class="-float-icon -slide-right">
-      <md-icon md-font-icon="Ionicons"
-        ng-click="vm.slideRight()"
-        class="ion-ios-arrow-right">
-      </md-icon>
-    </div>
-    <div class="-carousel">
-      <div class="-image" ng-repeat="item in ::vm.books" flex="nogrow" layout="column">
+    <div class="-carousel" ng-show="!vm.imageSelected">
+      <div class="-image" ng-repeat="(key, item) in ::vm.books" flex="nogrow" layout="column" ng-click="vm.showDetail(item)">
         <img src="{{::item.image}}">
         <div class="-name">
           {{::item.name}}
         </div>
       </div>
+    </div>
+    <div ng-if="!!vm.imageSelected">
+      <img src="{{::vm.imageSelected.imageOpen}}" />
+      <md-tooltip md-autohide="true" md-direction="left">
+        Diseño editorial
+      </md-tooltip>
+      <md-tooltip md-autohide="true" md-direction="right">
+        Fotografia
+      </md-tooltip>
     </div>
   </rm-section>
 </div>

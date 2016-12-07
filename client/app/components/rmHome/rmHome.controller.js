@@ -2,6 +2,7 @@ import logo from '../../common/img/logo.png';
 import years from '../../common/img/years2.png';
 
 import book1 from '../../common/img/book1.jpg';
+import bookOpen1 from '../../common/img/book-open1.jpg';
 import book2 from '../../common/img/book2.jpg';
 import book3 from '../../common/img/book3.jpg';
 import book4 from '../../common/img/book4.jpg';
@@ -20,6 +21,7 @@ class RmHomeController {
 
     this.books = [{
       image: book1,
+      imageOpen: bookOpen1,
       name: 'Libro Alas de la Ciudad'
     }, {
       image: book2,
@@ -94,6 +96,10 @@ class RmHomeController {
       this.services.user.setNavBar(true);
       this.services.user.setNavButton(true);
     }
+  }
+
+  showDetail(image) {
+    this.imageSelected = image;
   }
 
   slideLeft() {
