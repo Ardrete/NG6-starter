@@ -20,20 +20,16 @@ let componentModule = angular.module('app.components', [
     rmPrices,
     rmFaq
   ])
-  .run(($transitions, User, $timeout) => {
+  .run(($transitions, User) => {
     'ngInject';
 
-    $transitions.onSuccess({},
+    $transitions.onStart({},
       (event, toState, toParams, fromState, fromParams) => {
-        $timeout(() => {
-          const scroller = $('.onepage-wrapper');
+        const scroller = $('.onepage-wrapper');
 
-          if (_.isEmpty(scroller)) {
-            User.setNavButton(false);
-          } else {
-            User.setNavButton(true);
-          }
-        });
+        if (!_.isEmpty(scroller)) {
+          User.setNavButton(false);
+        }
       });
   })
 

@@ -55,6 +55,7 @@ class RmPricesController {
       direction: 'horizontal'
     };
   }
+
   $onDestroy() {
     this.$timeout(() => {
       $('.-main', this.$element).destroy_onepage_scroll(this.oneScrollOptions);

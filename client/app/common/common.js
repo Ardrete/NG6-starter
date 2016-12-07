@@ -6,7 +6,6 @@ import rmNavbar from './rmNavbar/rmNavbar';
 import rmListItem from './rmListitem/rmListitem';
 import rmInfoSection from './rmInfoSection/rmInfoSection';
 import rmSidebar from './rmSidebar/rmSidebar';
-import rmHeader from './rmHeader/rmHeader';
 import rmSection from './rmSection/rmSection';
 import User from './user/user';
 
@@ -15,7 +14,6 @@ let commonModule = angular.module('app.common', [
     rmSidebar,
     rmListItem,
     rmInfoSection,
-    rmHeader,
     rmSection,
     User
   ])

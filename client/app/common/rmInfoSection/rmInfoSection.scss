@@ -29,6 +29,7 @@ $content-height: 90%;
       right: 0;
       bottom: 0;
       left: 0;
+      @include background-size(cover);
     }
     .-info-content {
       info-content {
