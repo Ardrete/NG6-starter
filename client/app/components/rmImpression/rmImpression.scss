@@ -12,6 +12,6 @@ rm-impression {
     }
   }
   .-info-text {
-    background: #5C4281;
+    background: nth($colors, random($lengthColors));
   }
 }

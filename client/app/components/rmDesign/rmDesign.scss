@@ -12,6 +12,6 @@ rm-design {
     }
   }
   .-info-text {
-    background: deepskyblue;
+    background: nth($colors, random($lengthColors));
   }
 }

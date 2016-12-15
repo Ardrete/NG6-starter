@@ -22,7 +22,7 @@ rm-company {
       }
     }
     .-info-text {
-      background: purple;
+      background: nth($colors, random($lengthColors));
     }
   }
   .page-2 {
@@ -43,7 +43,7 @@ rm-company {
       }
     }
     .-info-text {
-      background: #B8171D;
+      background: nth($colors, random($lengthColors));
     }
   }
 }

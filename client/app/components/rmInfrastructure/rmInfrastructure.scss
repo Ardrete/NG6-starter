@@ -12,6 +12,6 @@ rm-infrastructure {
     }
   }
   .-info-text {
-    background: mediumseagreen;
+    background: nth($colors, random($lengthColors));
   }
 }

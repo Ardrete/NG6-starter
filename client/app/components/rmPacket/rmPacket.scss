@@ -12,6 +12,6 @@ rm-packet {
     }
   }
   .-info-text {
-    background: #DF1E3D;
+    background: nth($colors, random($lengthColors));
   }
 }

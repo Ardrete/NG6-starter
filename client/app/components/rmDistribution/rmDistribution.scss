@@ -3,7 +3,6 @@ rm-distribution {
   .-nav {
     background: #E2E3DB;
   }
-
   .-container {
     .-info-content {
       &::before {
@@ -12,8 +11,7 @@ rm-distribution {
       }
     }
   }
-
   .-info-text {
-    background: #F4B100;
+    background: nth($colors, random($lengthColors));
   }
 }

@@ -12,6 +12,6 @@ rm-video {
     }
   }
   .-info-text {
-    background: #EA7700;
+    background: nth($colors, random($lengthColors));
   }
 }

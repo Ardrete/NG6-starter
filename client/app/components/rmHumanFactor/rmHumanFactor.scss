@@ -12,6 +12,6 @@ rm-human-factor {
     }
   }
   .-info-text {
-    background: purple;
+    background: nth($colors, random($lengthColors));
   }
 }

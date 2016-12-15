@@ -23,6 +23,9 @@ rm-home {
       display: flex;
       justify-content: center;
       align-items: center;
+      .-logo {
+        opacity: 0.8;
+      }
       .-year {
         position: absolute;
         bottom: -1em;
@@ -83,7 +86,7 @@ rm-home {
       }
       .-image-detail {
         padding-left: 14vh;
-        img{
+        img {
           max-height: 400px;
         }
         .-section-link {

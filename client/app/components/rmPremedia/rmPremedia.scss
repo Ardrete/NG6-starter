@@ -12,6 +12,6 @@ rm-premedia {
     }
   }
   .-info-text {
-    background: #177986;
+    background: nth($colors, random($lengthColors));
   }
 }

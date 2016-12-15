@@ -12,6 +12,6 @@ rm-edition-care {
     }
   }
   .-info-text {
-    background: #AF337C;
+    background: nth($colors, random($lengthColors));
   }
 }

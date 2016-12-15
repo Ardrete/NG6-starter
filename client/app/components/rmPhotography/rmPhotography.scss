@@ -12,6 +12,6 @@ rm-photography {
     }
   }
   .-info-text {
-    background: #4F5299;
+    background: nth($colors, random($lengthColors));
   }
 }

@@ -12,6 +12,6 @@ rm-projects {
     }
   }
   .-info-text {
-    background: purple;
+    background: nth($colors, random($lengthColors));
   }
 }
