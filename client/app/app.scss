@@ -16,6 +16,9 @@ html {
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
   transition: opacity 400ms;
+  *:focus{
+    outline: none;
+  }
 }
 
 body,
