@@ -15,6 +15,12 @@ rm-sidebar {
       cursor: pointer;
     }
   }
+  .-list {
+    md-list-item {
+      min-height: 36px;
+      height: 36px;
+    }
+  }
   .-links {
     position: absolute;
     bottom: 2em;

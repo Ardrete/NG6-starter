@@ -44,7 +44,9 @@ rm-home {
         width: 100%;
         height: 50%;
         .slick-slide:not(.slick-current) {
-          // @include filter(blur(3px));
+          img{
+            opacity: 0.6;
+          }
           .-name {
             visibility: hidden;
           }

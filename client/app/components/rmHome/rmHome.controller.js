@@ -29,13 +29,13 @@ class RmHomeController {
 
     this.books = [{
       image: book1,
-      name: 'Libro Alas de la Ciudad',
+      name: 'Libro alas de la ciudad',
       imageOpen: bookOpen1,
       sections: [{
-        name: 'Distribucion',
+        name: 'Almacenamiento y distribuciòn',
         link: 'distribution'
       }, {
-        name: 'Medalla de Oro SAPPI',
+        name: 'Medalla de oro SAPPI',
         class: '-gold'
       }, {
         name: 'Diseño',
@@ -50,16 +50,16 @@ class RmHomeController {
         name: 'Premios',
         link: 'prices'
       }, {
-        name: 'Cuidado edicion',
+        name: 'Coordinación editorial',
         link: 'editionCare'
       }]
 
     }, {
       image: book2,
-      name: 'Libro Retrotabula',
+      name: 'Libro retrotabula',
       imageOpen: bookOpen2,
       sections: [{
-        name: 'Distribucion',
+        name: 'Almacenamiento y distribuciòn',
         link: 'distribution'
       }, {
         name: 'Diseño',
@@ -68,7 +68,7 @@ class RmHomeController {
         name: 'Fotografia',
         link: 'photography'
       }, {
-        name: 'Impresion',
+        name: 'Impresiòn',
         link: 'printing'
       }, {
         name: 'Video',
@@ -82,7 +82,7 @@ class RmHomeController {
       name: 'Libro México',
       imageOpen: bookOpen3,
       sections: [{
-        name: 'Distribucion',
+        name: 'Almacenamiento y distribuciòn',
         link: 'distribution'
       }, {
         name: 'Empaque',
@@ -97,7 +97,7 @@ class RmHomeController {
         name: 'Premios',
         link: 'prices'
       }, {
-        name: 'Cuidado edicion',
+        name: 'Coordinación editorial',
         link: 'editionCare'
       }]
     }, {
@@ -105,7 +105,7 @@ class RmHomeController {
       name: 'Libro Habeas Corpus',
       imageOpen: bookOpen4,
       sections: [{
-        name: 'Impresion',
+        name: 'Impresiòn',
         link: 'printing'
       }, {
         name: 'Empaque',
@@ -120,21 +120,21 @@ class RmHomeController {
         name: 'Premios',
         link: 'prices'
       }, {
-        name: 'Cuidado edicion',
+        name: 'Coordinación editorial',
         link: 'editionCare'
       }]
     }, {
       image: book5,
-      name: 'Libro La Patria',
+      name: 'Libro la patria',
       imageOpen: bookOpen5,
       sections: [{
-        name: 'Distribucion',
+        name: 'Almacenamiento y distribuciòn',
         link: 'distribution'
       }, {
         name: 'Fotografia',
         link: 'photography'
       }, {
-        name: 'Impresion',
+        name: 'Impresiòn',
         link: 'printing'
       }, {
         name: 'Video',
@@ -146,15 +146,15 @@ class RmHomeController {
         name: 'Premios',
         link: 'prices'
       }, {
-        name: 'Cuidado edicion',
+        name: 'Coordinación editorial',
         link: 'editionCare'
       }]
     }, {
       image: book6,
-      name: 'Libro 14 Flores',
+      name: 'Libro 14 flores',
       imageOpen: bookOpen6,
       sections: [{
-        name: 'Distribucion',
+        name: 'Almacenamiento y distribuciòn',
         link: 'distribution'
       }, {
         name: 'Empaque',
@@ -169,15 +169,15 @@ class RmHomeController {
         name: 'Premios',
         link: 'prices'
       }, {
-        name: 'Cuidado edicion',
+        name: 'Coordinación editorial',
         link: 'editionCare'
       }]
     }, {
       image: book7,
-      name: 'Libro Regalos',
+      name: 'Libro regalos',
       imageOpen: bookOpen7,
       sections: [{
-        name: 'Distribucion',
+        name: 'Almacenamiento y distribuciòn',
         link: 'distribution'
       }, {
         name: 'Diseño',
@@ -192,15 +192,15 @@ class RmHomeController {
         name: 'Premios',
         link: 'prices'
       }, {
-        name: 'Cuidado edicion',
+        name: 'Coordinación editorial',
         link: 'editionCare'
       }]
     }, {
       image: book8,
-      name: 'Libro De los Moles',
+      name: 'Libro de los moles',
       imageOpen: bookOpen8,
       sections: [{
-        name: 'Distribucion',
+        name: 'Almacenamiento y distribuciòn',
         link: 'distribution'
       }, {
         name: 'Diseño',
@@ -218,7 +218,7 @@ class RmHomeController {
         name: 'Premios',
         link: 'prices'
       }, {
-        name: 'Cuidado edicion',
+        name: 'Coordinación editorial',
         link: 'editionCare'
       }]
     }];
