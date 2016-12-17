@@ -1,4 +1,4 @@
-<rm-info-section>
+<rm-info-section ng-if="!vm.galleryShowed">
   <name>Almacenamiento y distribuciòn</name>
   <info-content>
   </info-content>
@@ -12,5 +12,36 @@
     <p>Para adquirir lotes completos de papel es necesario ir directamente al fabricante, en nuestro caso, los molinos en Austria
       que producen el papel Magno de Sappi. Con esto garantizamos el abasto de papel para toda la temporada, sin recurrir
       a papeleras nacionales. Así evitamos el financiamiento externo y tenemos un beneficio de costo al eliminar los intermediarios.</p>
+    <div class="-float-icon -plus" ng-click="vm.showGallery()">
+      Galeria
+      <md-icon md-font-icon="Ionicons" class="ion-android-add">
+      </md-icon>
+    </div>
   </info-text>
 </rm-info-section>
+<rm-section class="-gallery" ng-show="vm.galleryShowed" layout-fill ng-cloak>
+  <div class="-float-icon -slide-left">
+    <md-icon md-font-icon="Ionicons" ng-click="vm.slideLeft()" class="ion-ios-arrow-left">
+    </md-icon>
+  </div>
+  <div class="-float-icon -slide-right">
+    <md-icon md-font-icon="Ionicons" ng-click="vm.slideRight()" class="ion-ios-arrow-right">
+    </md-icon>
+  </div>
+  <div layout="column" class="-content">
+    <div class="-principal">
+      <div class="-carousel-for">
+        <div ng-repeat="(key, item) in ::vm.images" class="-image">
+          <img flex="nogrow" ng-src="{{::item}}">
+        </div>
+      </div>
+    </div>
+    <div class="-nav">
+      <div class="-carousel-nav">
+        <div class="-image" ng-repeat="(key, item) in ::vm.images">
+          <img flex="nogrow" ng-src="{{::item}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</rm-section>

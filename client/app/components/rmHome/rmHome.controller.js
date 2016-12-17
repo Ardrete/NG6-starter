@@ -305,11 +305,11 @@ class RmHomeController {
   }
 
   slideLeft() {
-    this.carousel.slick('slickNext');
+    this.carousel.slick('slickPrev');
   }
 
   slideRight() {
-    this.carousel.slick('slickPrev');
+    this.carousel.slick('slickNext');
   }
 }
 

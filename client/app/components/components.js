@@ -46,6 +46,7 @@ let componentModule = angular.module('app.components', [
         if (!_.isEmpty(scroller)) {
           User.setNavButton(false);
         }
+        User.setCloseButton(false);
       });
     $transitions.onSuccess({}, () => {
       $location.url($location.path());

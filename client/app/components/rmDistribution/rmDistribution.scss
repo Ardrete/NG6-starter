@@ -1,17 +1,103 @@
-@import '../../common/common.scss';
-rm-distribution {
-  .-nav {
-    background: #E2E3DB;
-  }
-  .-container {
-    .-info-content {
-      &::before {
-        @include filter(grayscale(100%));
-        background: url(../../common/img/distribution-background.jpg) center top no-repeat #555;
+  @import '../../common/common.scss';
+  rm-distribution {
+    .-nav {
+      background: #E2E3DB;
+    }
+    .-container {
+      .-info-content {
+        &::before {
+          @include filter(grayscale(100%));
+          background: url(../../common/img/distribution-background.jpg) center top no-repeat #555;
+        }
+      }
+    }
+    .-info-text {
+      background: nth($colors, random($lengthColors));
+      .-float-icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        z-index: 10;
+        &.-plus {
+          cursor: pointer;
+          bottom: 2vh;
+          left: 24vh;
+          md-icon {
+            height: 100%;
+            padding: 0 5px;
+            font-size: 44px;
+            color: white;
+          }
+        }
+      }
+    }
+    .-gallery {
+      .-float-icon {
+        position: absolute;
+        font-size: 83px;
+        z-index: 10;
+        &.-slide-left {
+          top: 25%;
+          left: 30px;
+        }
+        &.-slide-right {
+          top: 25%;
+          right: 30px;
+        }
+        md-icon {
+          text-shadow: 0px 0px 7px rgba(150, 150, 150, 0.46);
+          color: #050505;
+          height: 90px;
+          width: 80px;
+        }
+      }
+      .page-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .-content {
+          width: 100%;
+          .-principal {
+            width: 100%;
+            .-carousel-for {
+              .-image {
+                height: 55vh;
+                width: 75vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                  height: 50vh;
+                  width: 75vh;
+                }
+              }
+            }
+          }
+          .-nav {
+            width: 100%;
+            .-carousel-nav {
+              .slick-slide:not(.slick-current) {
+                img {
+                  opacity: 0.6;
+                }
+              }
+              .-image {
+                height: 27.5vh;
+                width: 38.75vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                  height: 25vh;
+                  width: 37.5vh;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
-  .-info-text {
-    background: nth($colors, random($lengthColors));
-  }
-}
