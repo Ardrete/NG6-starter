@@ -1,4 +1,4 @@
-<rm-info-section>
+<rm-info-section ng-if="!vm.galleryShowed">
   <name>Fotografìa</name>
   <info-content>
   </info-content>
@@ -10,5 +10,12 @@
       se requiere fotografiar automóviles, gastronomía o moda.</p>
     <p>Además de las producciones en el foro, tanto para foto fija como 360 y 3D, nuestro equipo realiza también producción
       en locación, para cubrir todas las necesidades del cliente.</p>
+    <div class="-float-icon -plus" ng-click="vm.showGallery()">
+      Galeria
+      <md-icon md-font-icon="Ionicons" class="ion-android-add">
+      </md-icon>
+    </div>
   </info-text>
 </rm-info-section>
+<rm-gallery images="vm.images" ng-show="vm.galleryShowed">
+</rm-gallery>

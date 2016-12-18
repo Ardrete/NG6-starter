@@ -1,4 +1,4 @@
-<rm-info-section>
+<rm-info-section ng-if="!vm.galleryShowed">
   <name>Premedia</name>
   <info-content>
   </info-content>
@@ -8,5 +8,12 @@
       sofisticado y manipulación digital, ya sea Mac, PC o video.</p>
     <p>Cada ejemplar, sin importar el volumen de impresión, será siempre fiel al aprobado al final de la cadena de perfilación
       y calibración de nuestras máquinas, gracias a nuestro sistema directo a placa.</p>
+    <div class="-float-icon -plus" ng-click="vm.showGallery()">
+      Galeria
+      <md-icon md-font-icon="Ionicons" class="ion-android-add">
+      </md-icon>
+    </div>
   </info-text>
 </rm-info-section>
+<rm-gallery images="vm.images" ng-show="vm.galleryShowed">
+</rm-gallery>

@@ -49,13 +49,34 @@ $content-height: 90%;
     top: $nav-heigth;
     width: $sidenav-mobile-width;
     height: $content-height;
+    .-float-icon {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      z-index: 10;
+      &.-plus {
+        cursor: pointer;
+        bottom: 2vh;
+        left: 24vh;
+        md-icon {
+          height: 100%;
+          padding: 0 5px;
+          font-size: 44px;
+          color: white;
+        }
+      }
+    }
     info-text {
       display: block;
       color: white;
       font-size: 20px;
-      font-weight: bold;
       text-align: left;
       padding: 3em 2em 1em 2em;
+      p {
+        text-shadow: 1px 0px 5px #BCB9BD;
+      }
     }
   }
 }

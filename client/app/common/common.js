@@ -7,14 +7,17 @@ import rmListItem from './rmListitem/rmListitem';
 import rmInfoSection from './rmInfoSection/rmInfoSection';
 import rmSidebar from './rmSidebar/rmSidebar';
 import rmSection from './rmSection/rmSection';
+import rmGallery from './rmGallery/rmGallery';
 import User from './user/user';
 
-let commonModule = angular.module('app.common', [
+let commonModule = angular.module('app.common',
+  [
     rmNavbar,
     rmSidebar,
     rmListItem,
     rmInfoSection,
     rmSection,
+    rmGallery,
     User
   ])
   .config(($mdThemingProvider, $mdIconProvider) => {

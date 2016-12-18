@@ -1,4 +1,4 @@
-<rm-info-section>
+<rm-info-section ng-if="!vm.galleryShowed">
   <name>Diseño</name>
   <info-content>
   </info-content>
@@ -10,5 +10,12 @@
       final, y con especialistas en publicidad, coordinación editorial, escritores y correctores, nuestros diseñadores pondrán
       en papel cualquier cosa que nuestros clientes imaginen.</p>
     <p> Los premios que hemos obtenido hablan por sí mismos.</p>
-    </info-t ext>
+    <div class="-float-icon -plus" ng-click="vm.showGallery()">
+      Galeria
+      <md-icon md-font-icon="Ionicons" class="ion-android-add">
+      </md-icon>
+    </div>
+  </info-text>
 </rm-info-section>
+<rm-gallery images="vm.images" ng-show="vm.galleryShowed">
+</rm-gallery>

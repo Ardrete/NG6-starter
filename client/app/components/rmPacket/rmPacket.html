@@ -1,4 +1,4 @@
-<rm-info-section>
+<rm-info-section ng-if="!vm.galleryShowed">
   <name>Empaquetaciòn</name>
   <info-content>
   </info-content>
@@ -12,5 +12,12 @@
       occaecat officia eiusmod deserunt consequat id. Magna nulla non aliqua amet aliquip. Ullamco amet cupidatat labore
       quis ipsum fugiat velit aliqua.
     </p>
+    <div class="-float-icon -plus" ng-click="vm.showGallery()">
+      Galeria
+      <md-icon md-font-icon="Ionicons" class="ion-android-add">
+      </md-icon>
+    </div>
   </info-text>
 </rm-info-section>
+<rm-gallery images="vm.images" ng-show="vm.galleryShowed">
+</rm-gallery>
