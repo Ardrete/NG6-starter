@@ -1,8 +1,9 @@
 class RmNavbarController {
   /*@ngInject*/
-  constructor(rmSidebar, User, $timeout) {
+  constructor(rmSidebar, User, $timeout, $window) {
     this.name = 'rmNavbar';
     this.$timeout = $timeout;
+    this.$window = $window;
     this.component = {
       sidebar: rmSidebar
     };
@@ -10,6 +11,10 @@ class RmNavbarController {
     this.services = {
       user: User
     };
+  }
+
+  back() {
+    this.services.user.onBack();
   }
 
   moveDown() {

@@ -3,6 +3,13 @@
     <hi>romo</hi>
   </div>
   <div class="-menu">
+    <div class="-icon" ng-show="vm.services.user.hasBackButton()">
+      <md-icon
+        ng-click="vm.back()"
+        md-font-icon="Ionicons"
+        class="ion-android-arrow-back">
+      </md-icon>
+    </div>
     <div class="-icon" ng-show="vm.services.user.hasCloseButton()">
       <md-icon
         ng-click="vm.services.user.onClose()"

@@ -1,44 +1,74 @@
-let UserFactory = function () {
+const UserFactory = function () {
   const user = {};
   let enableNavBar = true;
   let enableNavButton = false;
   let enableCloseButton = false;
   let callbackClose;
+  let bookOpen;
+  let enableBackButton = false;
+  let callbackBack;
 
-  let getUser = () => {
+
+  const getUser = () => {
     return user;
   };
 
-  let isSignedIn = () => {
+  const isSignedIn = () => {
     return user.isSignedIn;
   };
 
-  let hasNavBar = () => {
+  const hasNavBar = () => {
     return enableNavBar;
   };
 
-  let setNavBar = (value) => {
+  const setNavBar = (value) => {
     enableNavBar = value;
   };
 
-  let setNavButton = (value) => {
+  const setNavButton = (value) => {
     enableNavButton = value;
   };
 
-  let hasNavButton = () => {
+  const hasNavButton = () => {
     return enableNavButton;
   };
 
-  let setCloseButton = (value, callback) => {
+  const setCloseButton = (value, callback) => {
     enableCloseButton = value;
     if (_.isFunction(callback)) {
       callbackClose = callback;
     }
+    if (!value) {
+      callbackClose = _.noop();
+    }
   };
 
-  let hasCloseButton = () => {
+  const hasCloseButton = () => {
     return enableCloseButton;
   };
+
+  const setBackButton = (value, callback) => {
+    enableBackButton = value;
+    if (_.isFunction(callback)) {
+      callbackBack = callback;
+    }
+    if (!value) {
+      callbackBack = _.noop();
+    }
+  };
+
+  const hasBackButton = () => {
+    return enableBackButton;
+  };
+
+  const setBookOpen = (value) => {
+    bookOpen = value;
+  };
+  const getBookOpen = () => {
+    return bookOpen;
+  };
+
+  const hasBookOpen = () => Boolean(bookOpen);
 
   return {
     getUser,
@@ -49,7 +79,21 @@ let UserFactory = function () {
     hasNavButton,
     setCloseButton,
     hasCloseButton,
-    onClose: () => callbackClose()
+    onClose: () => {
+      if (callbackClose) {
+        callbackClose();
+      }
+    },
+    onBack: () => {
+      if (callbackBack) {
+        callbackBack();
+      }
+    },
+    setBookOpen,
+    getBookOpen,
+    hasBookOpen,
+    hasBackButton,
+    setBackButton
   };
 };
 

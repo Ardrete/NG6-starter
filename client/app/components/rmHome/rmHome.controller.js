@@ -231,7 +231,7 @@ class RmHomeController {
     this.years = years;
     this.oneScrollOptions = {
       sectionContainer: 'section',
-      easing: 'cubic-bezier(0.175, 0.885, 0.420, 1.310)',
+      // easing: 'cubic-bezier(0.175, 0.885, 0.420, 1.310)',
       beforeMove: (page) => this.$timeout(this.onBeforeMove(page))
     };
 
@@ -262,6 +262,17 @@ class RmHomeController {
   $postLink() {
     this.$timeout(() => {
       $('.main', this.$element).onepage_scroll(this.oneScrollOptions);
+      const book = this.services.user.getBookOpen();
+
+      this.services.user.setBookOpen(null);
+      if (book) {
+        this.slickOptions.initialSlide = book.bookKey;
+        this.imageSelected = book.bookSelected;
+        $('.main', this.$element).moveDown();
+        this.$timeout(() => {
+          this.showTransition = true;
+        }, 500);
+      }
       this.carousel = $('.-carousel', this.$element);
       this.carousel.slick(this.slickOptions);
     });
@@ -273,7 +284,7 @@ class RmHomeController {
       this.services.user.setNavButton(false);
     } else {
       this.services.user.setNavBar(true);
-      this.services.user.setNavButton(true);
+      this.services.user.setNavButton(false);
     }
   }
 
@@ -288,6 +299,14 @@ class RmHomeController {
   }
 
   nav(url) {
+    this.services.user.setBookOpen({
+      bookSelected: this.imageSelected,
+      bookKey: this.slickOptions.initialSlide
+    });
+    this.services.user.setBackButton(true, () => {
+      this.services.user.setBackButton(false);
+      this.$state.go('home');
+    });
     this.$state.go(url);
   }
 
