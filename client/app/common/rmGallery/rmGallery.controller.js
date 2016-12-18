@@ -5,26 +5,10 @@ class RmGalleryController {
     this.$timeout = $timeout;
     this.$element = $element;
 
-    this.slickOptionsFor = {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerMode: true,
-      asNavFor: '.-carousel-nav'
-    };
-
-    this.slickOptionsNav = {
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.-carousel-for',
-      centerMode: true,
-      focusOnSelect: true,
-      variableHeight: true,
-      variableWidth: true,
-      centerPadding: '90px',
-      adaptiveHeight: true,
-      autoplay: false,
+    this.slickOptions = {
+      autoplay: true,
       dots: true,
-      autoplaySpeed: 7000
+      appendDots: '.dots'
     };
   }
 
@@ -32,6 +16,14 @@ class RmGalleryController {
     if (changes.ngShow && changes.ngShow.currentValue) {
       this.show();
     }
+    if (changes.images && changes.images.currentValue) {
+      this.imageStyle = _.map(this.images, (item) => {
+        return {
+          'background-image': `url(${item})`
+        };
+      });
+    }
+
   }
 
   $postLink() {
@@ -39,32 +31,28 @@ class RmGalleryController {
   }
 
   $onDestroy() {
-    this.carouselFor.slick('unslick');
-    this.carouselNav.slick('unslick');
+    this.carousel.slick('unslick');
   }
 
   show() {
     this.$timeout(() => {
-      this.carouselFor.slick('setPosition');
-      this.carouselNav.slick('setPosition');
+      this.carousel.slick('setPosition');
     });
   }
 
   slideLeft() {
-    this.carouselNav.slick('slickPrev');
+    this.carousel.slick('slickPrev');
   }
 
   slideRight() {
-    this.carouselNav.slick('slickNext');
+    this.carousel.slick('slickNext');
   }
 
   initCarousel() {
     this.$timeout(() => {
-      if (!this.carouselFor && !this.carouselNav) {
-        this.carouselFor = $('.-carousel-for', this.$element);
-        this.carouselNav = $('.-carousel-nav', this.$element);
-        this.carouselFor.slick(this.slickOptionsFor);
-        this.carouselNav.slick(this.slickOptionsNav);
+      if (!this.carousel) {
+        this.carousel = $('.-carousel-full', this.$element);
+        this.carousel.slick(this.slickOptions);
       }
     });
   }
