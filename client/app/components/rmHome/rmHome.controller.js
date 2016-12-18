@@ -268,6 +268,7 @@ class RmHomeController {
       if (book) {
         this.slickOptions.initialSlide = book.bookKey;
         this.imageSelected = book.bookSelected;
+        this.services.user.setCloseButton(true, () => this.closeBook());
         $('.main', this.$element).moveDown();
         this.$timeout(() => {
           this.showTransition = true;
