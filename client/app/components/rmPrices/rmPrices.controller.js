@@ -7,37 +7,24 @@ class RmPricesController {
     this.$element = $element;
     this.$timeout = $timeout;
     this.trophy = trophy;
-    this.prices = [
-      'certificado 2007 Nacional: Uilmac',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'certificado Al Merito 2009 Pia',
-      'certificado Al Merito 2009 Pia',
-      'best Of Division Pia 2009',
-      'best O Category Pia 2009',
-      'best In Show Pia 2009',
-      'best Of Category Pia 2010',
-      'premio Latinoamericano Theobaldo De Nigris',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'best Of Category Pia 2012',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'super Empresas -Top Companies',
-      'super Empresas -Top Companies',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'premio Latinoamericano Theobaldo De Nigris',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'medalla De Oro Sappi Region Trading',
-      'elefante De Sappi 1er Lugar Mundial',
-      'premio Al Reconocimiento Pia Internacional',
-      'best Of Division Pia 2009',
-      'best O Category Pia 2009',
-      'best In Show Pia 2009',
-      'best Of Category Pia 2010',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'best Of Category Pia 2012',
-      'premio Nacional Artes Gráfica: Uilmac',
-      'premio Nacional Artes Gráfica: Uilmac',
-    ];
+    this.prices = {
+      "Catalogo Andrea Moda Joven OI 2006-2007": [
+        "Premio Lationamericano Theobaldo de Nigris",
+        "Premio Nacional Artes Graficas: UILMAC"
+      ],
+      "Catalogo Andrea Moda Joven OI 2006-2008": [
+        "Premio Lationamericano Theobaldo de Nigris",
+        "Premio Nacional Artes Graficas: UILMAC"
+      ],
+      "Catalogo Andrea Moda Joven OI 2006-2009": [
+        "Premio Lationamericano Theobaldo de Nigris",
+        "Premio Nacional Artes Graficas: UILMAC"
+      ],
+      "Catalogo Andrea Moda Joven OI 2006-20010": [
+        "Premio Lationamericano Theobaldo de Nigris",
+        "Premio Nacional Artes Graficas: UILMAC"
+      ]
+    };
 
     this.oneScrollOptions = {
       sectionContainer: 'section',

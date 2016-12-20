@@ -6,9 +6,13 @@
           <span>Premios</span>
         </div>
         <div class="-list" layout="row" layout-wrap>
-          <span ng-repeat="(key, item) in vm.prices track by key" flex="50">
-            {{item}}
-          </span>
+          <div class="-book" ng-repeat="(book, price) in vm.prices" flex="50">
+            {{book}}
+            <div class="-price" ng-repeat="item in price">
+              {{item}}
+            </div>
+          </div>
+          <span>
         </div>
       </div>
       <div class="-image" flex="20">
