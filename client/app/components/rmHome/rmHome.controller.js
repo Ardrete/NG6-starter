@@ -29,10 +29,10 @@ class RmHomeController {
 
     this.books = [{
       image: book1,
-      name: 'Libro alas de la ciudad',
+      name: 'Alas de la ciudad',
       imageOpen: bookOpen1,
       sections: [{
-        name: 'Almacenamiento y distribuciòn',
+        name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
         name: 'Medalla de oro SAPPI',
@@ -41,7 +41,7 @@ class RmHomeController {
         name: 'Diseño',
         link: 'design'
       }, {
-        name: 'Fotografia',
+        name: 'Fotografía',
         link: 'photography'
       }, {
         name: 'Premedia',
@@ -56,19 +56,19 @@ class RmHomeController {
 
     }, {
       image: book2,
-      name: 'Libro retrotabula',
+      name: 'Retrotabula',
       imageOpen: bookOpen2,
       sections: [{
-        name: 'Almacenamiento y distribuciòn',
+        name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
         name: 'Diseño',
         link: 'design'
       }, {
-        name: 'Fotografia',
+        name: 'Fotografía',
         link: 'photography'
       }, {
-        name: 'Impresiòn',
+        name: 'Impresión',
         link: 'printing'
       }, {
         name: 'Video',
@@ -79,10 +79,10 @@ class RmHomeController {
       }]
     }, {
       image: book3,
-      name: 'Libro México',
+      name: 'México',
       imageOpen: bookOpen3,
       sections: [{
-        name: 'Almacenamiento y distribuciòn',
+        name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
         name: 'Empaque',
@@ -102,10 +102,10 @@ class RmHomeController {
       }]
     }, {
       image: book4,
-      name: 'Libro Habeas Corpus',
+      name: 'Habeas Corpus',
       imageOpen: bookOpen4,
       sections: [{
-        name: 'Impresiòn',
+        name: 'Impresión',
         link: 'printing'
       }, {
         name: 'Empaque',
@@ -125,16 +125,16 @@ class RmHomeController {
       }]
     }, {
       image: book5,
-      name: 'Libro la patria',
+      name: 'La patria',
       imageOpen: bookOpen5,
       sections: [{
-        name: 'Almacenamiento y distribuciòn',
+        name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
-        name: 'Fotografia',
+        name: 'Fotografía',
         link: 'photography'
       }, {
-        name: 'Impresiòn',
+        name: 'Impresión',
         link: 'printing'
       }, {
         name: 'Video',
@@ -151,10 +151,10 @@ class RmHomeController {
       }]
     }, {
       image: book6,
-      name: 'Libro 14 flores',
+      name: '14 flores',
       imageOpen: bookOpen6,
       sections: [{
-        name: 'Almacenamiento y distribuciòn',
+        name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
         name: 'Empaque',
@@ -174,16 +174,16 @@ class RmHomeController {
       }]
     }, {
       image: book7,
-      name: 'Libro regalos',
+      name: 'Regalos',
       imageOpen: bookOpen7,
       sections: [{
-        name: 'Almacenamiento y distribuciòn',
+        name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
         name: 'Diseño',
         link: 'design'
       }, {
-        name: 'Fotografia',
+        name: 'Fotografía',
         link: 'photography'
       }, {
         name: 'Premedia',
@@ -200,16 +200,16 @@ class RmHomeController {
       name: 'Libro de los moles',
       imageOpen: bookOpen8,
       sections: [{
-        name: 'Almacenamiento y distribuciòn',
+        name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
         name: 'Diseño',
         link: 'design'
       }, {
-        name: 'Fotografia',
+        name: 'Fotografía',
         link: 'photography'
       }, {
-        name: 'Impresion',
+        name: 'Impresión',
         link: 'printing'
       }, {
         name: 'Premedia',
