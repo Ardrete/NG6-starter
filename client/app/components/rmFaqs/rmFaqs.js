@@ -12,7 +12,7 @@ let rmFaqsModule = angular.module('rmFaqs', [
     $stateProvider
       .state('faq', {
         url: '/faq',
-        template: '<rm-faq layout-fill></rm-faq>'
+        template: '<rm-faqs layout-fill></rm-faqs>'
       });
   })
   .name;
