@@ -12,6 +12,7 @@ rm-human-factor {
     }
   }
   .-info-text {
+    display: none;
     background: nth($colors, random($lengthColors));
   }
 }
