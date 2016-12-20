@@ -18,6 +18,7 @@ rm-home {
     .page-container::before {
       @include filter(grayscale(100%));
       background: url(../../common/img/home.jpg) center top no-repeat #555;
+      background-size: cover;
     }
     .-images {
       display: flex;

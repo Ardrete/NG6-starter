@@ -6,9 +6,12 @@ class RmGalleryController {
     this.$element = $element;
 
     this.slickOptions = {
-      autoplay: true,
       dots: true,
-      appendDots: '.dots'
+      appendDots: '.dots',
+      autoplay: true,
+      autoplaySpeed: 7000,
+      pauseOnFocus: false,
+      pauseOnHover: false
     };
   }
 
