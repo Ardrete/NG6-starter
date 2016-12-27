@@ -35,25 +35,29 @@ class RmHomeController {
         name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
-        name: 'Medalla de oro SAPPI',
-        class: '-gold'
+        name: 'Empaque',
+        link: 'packing'
+      }, {
+        name: 'Impresión',
+        link: 'printing'
+      },
+        {
+        name: 'Video',
+        link: 'video'
+      }, {
+        name: 'Premios',
+        link: 'prices'
+      }, 
+        {
+        name: 'Premedia',
+        link: 'premedia'
       }, {
         name: 'Diseño',
         link: 'design'
       }, {
-        name: 'Fotografía',
-        link: 'photography'
-      }, {
-        name: 'Premedia',
-        link: 'premedia'
-      }, {
-        name: 'Premios',
-        link: 'prices'
-      }, {
         name: 'Coordinación editorial',
         link: 'editionCare'
       }]
-
     }, {
       image: book2,
       name: 'Retrotabula',
@@ -62,25 +66,47 @@ class RmHomeController {
         name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
-        name: 'Diseño',
-        link: 'design'
-      }, {
-        name: 'Fotografía',
-        link: 'photography'
+        name: 'Empaque',
+        link: 'packing'
       }, {
         name: 'Impresión',
         link: 'printing'
-      }, {
+      },
+        {
         name: 'Video',
         link: 'video'
       }, {
+        name: 'Premios',
+        link: 'prices'
+      }, 
+        {
         name: 'Premedia',
         link: 'premedia'
+      }, {
+        name: 'Diseño',
+        link: 'design'
+      }, {
+        name: 'Coordinación editorial',
+        link: 'editionCare'
       }]
     }, {
       image: book3,
-      name: 'México',
+      name: 'México Encanto y Pasión',
       imageOpen: bookOpen3,
+      sections: [{
+          name: 'Impresión',
+          link: 'printing'
+      }, {
+        name: 'Premedia',
+        link: 'premedia'
+      }, {
+        name: 'Almacenamiento y distribución',
+        link: 'distribution'
+      }]
+    }, {
+      image: book4,
+      name: 'Habeas Corpus',
+      imageOpen: bookOpen4,
       sections: [{
         name: 'Almacenamiento y distribución',
         link: 'distribution'
@@ -88,37 +114,22 @@ class RmHomeController {
         name: 'Empaque',
         link: 'packing'
       }, {
-        name: 'Video',
-        link: 'video'
-      }, {
-        name: 'Premedia',
-        link: 'premedia'
-      }, {
-        name: 'Premios',
-        link: 'prices'
-      }, {
-        name: 'Coordinación editorial',
-        link: 'editionCare'
-      }]
-    }, {
-      image: book4,
-      name: 'Habeas Corpus',
-      imageOpen: bookOpen4,
-      sections: [{
         name: 'Impresión',
         link: 'printing'
-      }, {
-        name: 'Empaque',
-        link: 'packing'
-      }, {
+      },
+        {
         name: 'Video',
         link: 'video'
       }, {
+        name: 'Premios',
+        link: 'prices'
+      }, 
+        {
         name: 'Premedia',
         link: 'premedia'
       }, {
-        name: 'Premios',
-        link: 'prices'
+        name: 'Diseño',
+        link: 'design'
       }, {
         name: 'Coordinación editorial',
         link: 'editionCare'
@@ -131,23 +142,18 @@ class RmHomeController {
         name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
-        name: 'Fotografía',
-        link: 'photography'
+        name: 'Empaque',
+        link: 'packing'
       }, {
         name: 'Impresión',
         link: 'printing'
       }, {
-        name: 'Video',
-        link: 'video'
-      }, {
-        name: 'Premedia',
-        link: 'premedia'
-      }, {
         name: 'Premios',
         link: 'prices'
-      }, {
-        name: 'Coordinación editorial',
-        link: 'editionCare'
+      }, 
+        {
+        name: 'Premedia',
+        link: 'premedia'
       }]
     }, {
       image: book6,
@@ -160,14 +166,28 @@ class RmHomeController {
         name: 'Empaque',
         link: 'packing'
       }, {
+        name: 'Impresión',
+        link: 'printing'
+      },
+        {
         name: 'Video',
         link: 'video'
       }, {
+        name: 'Premios',
+        link: 'prices'
+      }, 
+        {
         name: 'Premedia',
         link: 'premedia'
       }, {
         name: 'Premios',
         link: 'prices'
+      }, {
+        name: 'Fotografía',
+        link: 'photography'
+      }, {
+        name: 'Diseño',
+        link: 'design'
       }, {
         name: 'Coordinación editorial',
         link: 'editionCare'
@@ -177,37 +197,28 @@ class RmHomeController {
       name: 'Regalos',
       imageOpen: bookOpen7,
       sections: [{
-        name: 'Almacenamiento y distribución',
-        link: 'distribution'
-      }, {
-        name: 'Diseño',
-        link: 'design'
-      }, {
-        name: 'Fotografía',
-        link: 'photography'
+        name: 'Impresión',  
+          link: 'printing'
       }, {
         name: 'Premedia',
         link: 'premedia'
       }, {
-        name: 'Premios',
-        link: 'prices'
+        name: 'Almacenamiento y distribución',
+        link: 'distribution'
       }, {
-        name: 'Coordinación editorial',
-        link: 'editionCare'
+        name: 'Fotografía',
+        link: 'photography'
       }]
     }, {
       image: book8,
-      name: 'Libro de los moles',
+      name: 'Los moles',
       imageOpen: bookOpen8,
       sections: [{
         name: 'Almacenamiento y distribución',
         link: 'distribution'
       }, {
-        name: 'Diseño',
-        link: 'design'
-      }, {
-        name: 'Fotografía',
-        link: 'photography'
+        name: 'Empaque',
+        link: 'packing'
       }, {
         name: 'Impresión',
         link: 'printing'

@@ -7,7 +7,7 @@ rm-edition-care {
     .-info-content {
       &::before {
         @include filter(grayscale(100%));
-        background: url(../../common/img/editioncare-background.jpg) center top no-repeat #555;
+        background: url(../../common/img/editioncare-background1.jpg) center top no-repeat #555;
       }
     }
   }
