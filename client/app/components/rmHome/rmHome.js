@@ -1,24 +1,29 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import homeComponent from './rmHome.component';
+import bookSections from './bookSections';
 
-let homeModule = angular.module('rmHome', [
+const homeModule = angular.module('rmHome', [
   uiRouter
 ])
 
 .config(($stateProvider, $urlRouterProvider) => {
-  "ngInject";
+  'ngInject';
 
   $urlRouterProvider.otherwise('/home');
 
   $stateProvider
     .state('home', {
-      url: '/home',
-      component: 'rmHome'
+      url: '/home/:key',
+      component: 'rmHome',
+      params: {
+        key: null
+      }
     });
 })
 
 .component('rmHome', homeComponent)
+.constant('bookSections', bookSections)
 
 .name;
 

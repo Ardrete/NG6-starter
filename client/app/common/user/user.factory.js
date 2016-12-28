@@ -4,7 +4,6 @@ const UserFactory = function () {
   let enableNavButton = false;
   let enableCloseButton = false;
   let callbackClose;
-  let bookOpen;
   let enableBackButton = false;
   let callbackBack;
 
@@ -61,12 +60,6 @@ const UserFactory = function () {
     return enableBackButton;
   };
 
-  const setBookOpen = (value) => {
-    bookOpen = value;
-  };
-  const getBookOpen = () => {
-    return bookOpen;
-  };
 
   const hasBookOpen = () => Boolean(bookOpen);
 
@@ -89,8 +82,6 @@ const UserFactory = function () {
         callbackBack();
       }
     },
-    setBookOpen,
-    getBookOpen,
     hasBookOpen,
     hasBackButton,
     setBackButton

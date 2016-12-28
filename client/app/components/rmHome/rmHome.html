@@ -33,7 +33,7 @@
       ng-if="!!vm.imageSelected">
       <img ng-src="{{::vm.imageSelected.imageOpen}}" />
       <div ng-repeat="(key, section) in ::vm.imageSelected.sections"
-        ng-click="vm.nav(section.link)"
+        ng-click="vm.nav(section.link, vm.slickOptions.initialSlide)"
         id="section-{{key}}"
         class="-circle {{section.class || '-white'}} -section-link scaling">
         <span>
