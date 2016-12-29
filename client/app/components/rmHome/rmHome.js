@@ -14,11 +14,8 @@ const homeModule = angular.module('rmHome', [
 
   $stateProvider
     .state('home', {
-      url: '/home/:key',
-      component: 'rmHome',
-      params: {
-        key: null
-      }
+      url: '/home?key',
+      component: 'rmHome'
     });
 })
 

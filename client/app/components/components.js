@@ -49,7 +49,6 @@ let componentModule = angular.module('app.components', [
         User.setCloseButton(false);
       });
     $transitions.onSuccess({}, ($transitions) => {
-      $location.url($location.path());
     });
   })
 

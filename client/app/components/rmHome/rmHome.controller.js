@@ -55,6 +55,9 @@ class RmHomeController {
       if (this.$stateParams.key) {
         book = this.books[this.$stateParams.key];
       }
+      if (this.$stateParams['#']) {
+        $('.main', this.$element).moveTo(this.$stateParams['#']);
+      }
 
       if (book) {
         this.slickOptions.initialSlide = this.$stateParams.key;
