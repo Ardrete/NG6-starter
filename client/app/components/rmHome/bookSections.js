@@ -59,10 +59,9 @@ const bookSections = [{
   name: 'Alas de la ciudad',
   imageOpen: bookOpen1,
   sections: [
+    /*Saqué: video y empaque*/
     sections.distribution,
-    sections.packing,
     sections.printing,
-    sections.video,
     sections.prices,
     sections.premedia,
     sections.design,
@@ -73,10 +72,9 @@ const bookSections = [{
   name: 'Retrotabula',
   imageOpen: bookOpen2,
   sections: [
+      /*Saque video y empaque*/
     sections.distribution,
-    sections.packing,
     sections.printing,
-    sections.video,
     sections.prices,
     sections.premedia,
     sections.design,
@@ -96,10 +94,9 @@ const bookSections = [{
   name: 'Habeas Corpus',
   imageOpen: bookOpen4,
   sections: [
+      /*Saque video y empaque*/
     sections.distribution,
-    sections.packing,
     sections.printing,
-    sections.video,
     sections.prices,
     sections.premedia,
     sections.design,
@@ -110,8 +107,8 @@ const bookSections = [{
   name: 'La patria',
   imageOpen: bookOpen5,
   sections: [
+      /*Saque empaque*/
     sections.distribution,
-    sections.packing,
     sections.printing,
     sections.prices,
     sections.premedia
@@ -121,10 +118,9 @@ const bookSections = [{
   name: '14 flores',
   imageOpen: bookOpen6,
   sections: [
+      /*Saque video y empaque*/
     sections.distribution,
-    sections.packing,
     sections.printing,
-    sections.video,
     sections.prices,
     sections.premedia,
     sections.photography,
@@ -146,8 +142,8 @@ const bookSections = [{
   name: 'Los moles',
   imageOpen: bookOpen8,
   sections: [
+      /*Saque empaque*/
     sections.distribution,
-    sections.packing,
     sections.printing,
     sections.premedia,
     sections.prices,
