@@ -16,6 +16,12 @@ rm-navbar {
     color: $logo-head-color;
     cursor: pointer;
     text-shadow: 0px 0px 7px rgba(150, 150, 150, 0.46);
+    .-logo {
+      background: url(../../common/img/logoMenu.png) center top no-repeat transparent;
+      background-size: cover;
+      height: 8vh;
+      width: 26vh;
+    }
   }
   .-menu {
     .-icon {

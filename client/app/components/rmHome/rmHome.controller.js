@@ -19,8 +19,7 @@ class RmHomeController {
     this.logo = logo;
     this.years = years;
     this.oneScrollOptions = {
-      sectionContainer: 'section',
-      beforeMove: (page) => this.$timeout(this.onBeforeMove(page))
+      sectionContainer: 'section'
     };
 
     this.slickOptions = {
@@ -33,7 +32,7 @@ class RmHomeController {
     };
   }
   $onInit() {
-    this.services.user.setNavBar(false);
+    this.services.user.setNavBar(true);
     this.services.user.setNavButton(false);
     this.services.user.setCloseButton(false);
   }
@@ -71,16 +70,6 @@ class RmHomeController {
       this.carousel = $('.-carousel', this.$element);
       this.carousel.slick(this.slickOptions);
     });
-  }
-
-  onBeforeMove(page) {
-    if (page === 1) {
-      this.services.user.setNavBar(false);
-      this.services.user.setNavButton(false);
-    } else {
-      this.services.user.setNavBar(true);
-      this.services.user.setNavButton(false);
-    }
   }
 
   closeBook() {

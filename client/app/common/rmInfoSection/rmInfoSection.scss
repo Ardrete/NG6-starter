@@ -71,9 +71,11 @@ $content-height: 90%;
     info-text {
       display: block;
       color: white;
-      font-size: 20px;
+      font-size: 2.4vh;
       text-align: left;
       padding: 3em 2em 1em 2em;
+      height: 70vh;
+      overflow-y: auto;
       p {
         text-shadow: 1px 1px 4px #000000;
       }

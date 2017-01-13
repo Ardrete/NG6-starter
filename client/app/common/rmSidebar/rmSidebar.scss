@@ -13,6 +13,12 @@ rm-sidebar {
       padding: 11px 20px;
       color: $logo-head-color;
       cursor: pointer;
+      .-logo {
+        background: url(../../common/img/logoMenu.png) center top no-repeat transparent;
+        background-size: cover;
+        height: 8vh;
+        width: 26vh;
+      }
     }
   }
   .-list {
