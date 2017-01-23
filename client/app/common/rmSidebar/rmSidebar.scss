@@ -28,7 +28,14 @@ rm-sidebar {
     md-list-item {
       min-height: 36px;
       height: 36px;
+      &.-first-level{
+        padding-left: 4vh;
+      }
+      &.-head-level{
+        pointer-events: none;
+      }
     }
+
   }
   .-links {
     position: absolute;

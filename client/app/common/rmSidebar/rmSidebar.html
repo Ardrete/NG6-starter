@@ -5,31 +5,39 @@
     </div>
   </div>
   <md-list class="-list">
-    <rm-listitem ng-click="nav('photography')" aria-label="photography">
+    <rm-listitem ng-click="nav('company')" aria-label="photography">
+      Compañia
+    </rm-listitem>
+    <rm-listitem class="-head-level" ng-click="nav('')" aria-label="services">
+      Servicios
+    </rm-listitem>
+    <rm-listitem class="-first-level" ng-click="nav('printing')" aria-label="printing">
+      Imprenta
+    </rm-listitem>
+    <rm-listitem class="-first-level" ng-click="nav('photography')" aria-label="photography">
       Fotografía y video
     </rm-listitem>
-    <rm-listitem ng-click="nav('design')" aria-label="design">
+    <rm-listitem class="-first-level" ng-click="nav('design')" aria-label="design">
       Diseño Gráfico
     </rm-listitem>
-    <rm-listitem ng-click="nav('distribution')" aria-label="distribution">
-      Almacenamiento y distribución
-    </rm-listitem>
-    <rm-listitem ng-click="nav('editionCare')" aria-label="editionCare">
+    <rm-listitem class="-first-level" ng-click="nav('editionCare')" aria-label="editionCare">
       Coordinación editorial
     </rm-listitem>
-    <rm-listitem ng-click="nav('premedia')" aria-label="premedia">
+    <rm-listitem class="-first-level" ng-click="nav('premedia')" aria-label="premedia">
       Premedia
     </rm-listitem>
-    <rm-listitem ng-click="nav('printing')" aria-label="printing">
-      Imprenta
+    <rm-listitem class="-first-level" ng-click="nav('distribution')" aria-label="distribution">
+      Almacenamiento y distribución
+    </rm-listitem>
+    <rm-listitem ng-click="nav('human-factor')" aria-label="Human Factor">
+      Factor Humano
+    </rm-listitem>
+    <rm-listitem ng-click="nav('faq')" aria-label="Faq">
+      FAQ
     </rm-listitem>
     <rm-listitem ng-click="nav('prices')" aria-label="Prices">
       Premios y certificaciones
     </rm-listitem>
-
-    <!--<rm-listitem ng-click="vm.toggleBooks()" aria-label="Books">
-      Libros
-    </rm-listitem>-->
 
   </md-list>
   <div layout="column" class="-links">
