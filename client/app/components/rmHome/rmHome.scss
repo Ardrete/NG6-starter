@@ -25,9 +25,11 @@ rm-home {
       align-items: center;
       .-logo {
         opacity: 0.8;
+        height: 55vh;
       }
       .-year {
         position: absolute;
+        height: 25vh;
         bottom: -1em;
         right: 4em;
       }

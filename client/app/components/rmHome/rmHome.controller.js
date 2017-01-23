@@ -32,7 +32,7 @@ class RmHomeController {
     };
   }
   $onInit() {
-    this.services.user.setNavBar(true);
+    this.services.user.setNavBar(false);
     this.services.user.setNavButton(false);
     this.services.user.setCloseButton(false);
   }

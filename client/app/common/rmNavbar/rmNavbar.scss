@@ -19,20 +19,22 @@ rm-navbar {
     .-logo {
       background: url(../../common/img/logoMenu.png) center top no-repeat transparent;
       background-size: cover;
-      height: 8vh;
-      width: 26vh;
+      height: 6vh;
+      width: 20vh;
     }
   }
   .-menu {
+    display: flex;
+    height: 10vh;
     .-icon {
       display: inline-block;
       cursor: pointer;
-      margin: 5px 5px 0 0;
-      padding: 20px;
+      margin: 1vh 0.7vh;
+      padding: 2.2vh;
       background-color: black;
       border: 1px solid white;
       md-icon {
-        font-size: 30px;
+        font-size: 4.5vh;
         color: white;
       }
     }
