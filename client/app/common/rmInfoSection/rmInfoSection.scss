@@ -55,6 +55,30 @@ $content-height: 90vh;
       @media (orientation: portrait) {
         width: 100%;
       }
+      .-gallery-button {
+        position: absolute;
+        bottom: 2vh;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        cursor: pointer;
+        font-size: 3vh;
+        >div {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          md-icon {
+            margin: 0;
+            height: 100%;
+            padding: 0 5px;
+            font-size: 3.5vh;
+            color: white;
+          }
+        }
+      }
       .-float-icon {
         position: absolute;
         display: flex;
@@ -62,17 +86,6 @@ $content-height: 90vh;
         align-items: center;
         font-size: 30px;
         z-index: 10;
-        &.-plus {
-          cursor: pointer;
-          bottom: 2vh;
-          left: 24vh;
-          md-icon {
-            height: 100%;
-            padding: 0 5px;
-            font-size: 44px;
-            color: white;
-          }
-        }
       }
       info-text {
         display: block;
