@@ -66,17 +66,12 @@ $content-height: 90vh;
         height: 5vh;
         cursor: pointer;
         font-size: 3vh;
-        >div {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          md-icon {
-            margin: 0;
-            height: 100%;
-            padding: 0 5px;
-            font-size: 3.5vh;
-            color: white;
-          }
+        md-icon {
+          margin: 0;
+          height: 100%;
+          padding: 0 5px;
+          font-size: 3.5vh;
+          color: white;
         }
       }
       .-float-icon {
