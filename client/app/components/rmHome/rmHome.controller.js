@@ -30,8 +30,7 @@ class RmHomeController {
       slidesToShow: 3,
       arrows: false,
       focusOnSelect: true,
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 768,
           settings: {
             arrows: false,
@@ -56,7 +55,7 @@ class RmHomeController {
   }
   $onInit() {
     this.services.user.setNavBar(false);
-    this.services.user.setNavButton(false);
+    this.services.user.setNavButton(true);
     this.services.user.setCloseButton(false);
   }
 
@@ -109,7 +108,7 @@ class RmHomeController {
   onBeforeMove(page) {
     if (page === 1) {
       this.services.user.setNavBar(false);
-      this.services.user.setNavButton(false);
+      this.services.user.setNavButton(true);
     } else {
       this.services.user.setNavBar(true);
       this.services.user.setNavButton(false);
