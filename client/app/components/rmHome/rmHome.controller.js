@@ -19,7 +19,8 @@ class RmHomeController {
     this.logo = logo;
     this.years = years;
     this.oneScrollOptions = {
-      sectionContainer: 'section'
+      sectionContainer: 'section',
+      beforeMove: (page) => this.$timeout(this.onBeforeMove(page))
     };
 
     this.slickOptions = {
@@ -80,6 +81,17 @@ class RmHomeController {
       this.carousel = $('.-carousel', this.$element);
       this.carousel.slick(this.slickOptions);
     });
+  }
+
+
+  onBeforeMove(page) {
+    if (page === 1) {
+      this.services.user.setNavBar(false);
+      this.services.user.setNavButton(false);
+    } else {
+      this.services.user.setNavBar(true);
+      this.services.user.setNavButton(false);
+    }
   }
 
   nav(url, key) {
