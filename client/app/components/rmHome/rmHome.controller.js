@@ -29,7 +29,29 @@ class RmHomeController {
       adaptiveHeight: true,
       slidesToShow: 3,
       arrows: false,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            adaptiveHeight: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            adaptiveHeight: true,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
     };
   }
   $onInit() {
