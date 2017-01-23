@@ -1,4 +1,4 @@
-<rm-info-section>
+<rm-info-section ng-if="!vm.galleryShowed">
   <name>Coordinación editorial</name>
   <info-content>
   </info-content>
@@ -6,5 +6,14 @@
     <p>
       En Grupo Romo nos hemos especializado en ofrecerte el desarrollo completo de tus proyectos. Nuestro departamento editorial se adapta a tus necesidades: si requieres el seguimiento y el cuidado de tus propios proyectos, o si necesitas de ideas frescas y contenidos especializados. Ya sea catálogos comerciales o de arte, libros de autor, ediciones conmemorativas o de fotografía, nuestro equipo de escritores, traductores, correctores, fotógrafos, diseñadores y creativos unen sus talentos bajo una coordinación de primer nivel para estructurar tus proyectos editoriales, darle forma a tus ideas y editar tus impresos tal como los has pensado, desde el desarrollo de un índice de contenido hasta el impreso final.
     </p>
+  <div class="-gallery-button" ng-click="vm.showGallery()">
+      <div>
+        <span>Galería</span>
+        <md-icon md-font-icon="Ionicons" class="ion-android-add">
+        </md-icon>
+      </div>
+    </div>
   </info-text>
 </rm-info-section>
+<rm-gallery images="vm.images" ng-show="vm.galleryShowed">
+</rm-gallery>

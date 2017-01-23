@@ -1,9 +1,8 @@
-import image1 from './../../common/img/desig_1.jpg';
-import image2 from './../../common/img/desig_2.jpg';
-import image3 from './../../common/img/desig_3.jpg';
-import image4 from './../../common/img/desig_4.jpg';
-import image5 from './../../common/img/desig_5.jpg';
-import image6 from './../../common/img/desig_6.jpg';
+import image5 from './../../common/img/diseno/5.jpg';
+import image1 from './../../common/img/diseno/1.jpg';
+import image2 from './../../common/img/diseno/2.jpg';
+import image3 from './../../common/img/diseno/3.jpg';
+import image4 from './../../common/img/diseno/4.jpg';
 
 class RmDesignController {
   /*@ngInject*/
@@ -14,12 +13,11 @@ class RmDesignController {
     };
 
     this.images = [
+      image5,
       image1,
       image2,
       image3,
-      image4,
-      image5,
-      image6
+      image4
     ];
   }
 

@@ -1,29 +1,27 @@
-import image1 from './../../common/img/print-1.jpg';
-import image2 from './../../common/img/print-2.jpg';
-import image3 from './../../common/img/print-3.jpg';
-import image4 from './../../common/img/print-4.jpg';
-import image5 from './../../common/img/print-5.jpg';
-import image6 from './../../common/img/print-6.jpg';
-import image7 from './../../common/img/print-7.jpg';
-import image8 from './../../common/img/print-8.jpg';
-import image9 from './../../common/img/print-9.jpg';
-import image10 from './../../common/img/print-10.jpg';
-import image11 from './../../common/img/print-11.jpg';
-import image12 from './../../common/img/print-12.jpg';
-import image13 from './../../common/img/print-13.jpg';
-import image14 from './../../common/img/print-14.jpg';
-import image15 from './../../common/img/print-15.jpg';
-import image16 from './../../common/img/print-16.jpg';
-import image17 from './../../common/img/print-17.jpg';
-import image18 from './../../common/img/print-18.jpg';
-import image19 from './../../common/img/print-19.jpg';
-import image20 from './../../common/img/print-20.jpg';
-import image21 from './../../common/img/print-21.jpg';
-import image22 from './../../common/img/print-22.jpg';
-import image23 from './../../common/img/print-23.jpg';
-import image24 from './../../common/img/print-24.jpg';
-import image25 from './../../common/img/print-25.jpg';
-import image26 from './../../common/img/print-26.jpg';
+import image4 from './../../common/img/imprenta/4.jpg';
+import image1 from './../../common/img/imprenta/1.jpg';
+import image2 from './../../common/img/imprenta/2.jpg';
+import image3 from './../../common/img/imprenta/3.jpg';
+import image5 from './../../common/img/imprenta/5.jpg';
+import image6 from './../../common/img/imprenta/6.jpg';
+import image7 from './../../common/img/imprenta/7.jpg';
+import image8 from './../../common/img/imprenta/8.jpg';
+import image9 from './../../common/img/imprenta/9.jpg';
+import image10 from './../../common/img/imprenta/10.jpg';
+import image11 from './../../common/img/imprenta/11.jpg';
+import image12 from './../../common/img/imprenta/12.jpg';
+import image13 from './../../common/img/imprenta/13.jpg';
+import image14 from './../../common/img/imprenta/14.jpg';
+import image15 from './../../common/img/imprenta/15.jpg';
+import image16 from './../../common/img/imprenta/16.jpg';
+import image17 from './../../common/img/imprenta/17.jpg';
+import image18 from './../../common/img/imprenta/18.jpg';
+import image19 from './../../common/img/imprenta/19.jpg';
+import image20 from './../../common/img/imprenta/20.jpg';
+import image21 from './../../common/img/imprenta/21.jpg';
+import image22 from './../../common/img/imprenta/22.jpg';
+import image23 from './../../common/img/imprenta/23.jpg';
+import image24 from './../../common/img/imprenta/24.jpg';
 
 class RmImpressionController {
   /*@ngInject*/
@@ -35,10 +33,10 @@ class RmImpressionController {
     };
 
     this.images = [
+      image4,
       image1,
       image2,
       image3,
-      image4,
       image5,
       image6,
       image7,
@@ -58,9 +56,7 @@ class RmImpressionController {
       image21,
       image22,
       image23,
-      image24,
-      image25,
-      image26
+      image24
     ];
   }
 

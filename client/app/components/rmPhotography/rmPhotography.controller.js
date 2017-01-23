@@ -1,14 +1,19 @@
-import image1 from './../../common/img/photo-1.jpg';
-import image2 from './../../common/img/photo-2.jpg';
-import image3 from './../../common/img/photo-3.jpg';
-import image4 from './../../common/img/photo-4.jpg';
-import image5 from './../../common/img/photo-5.jpg';
-import image6 from './../../common/img/photo-6.jpg';
-import image7 from './../../common/img/photo-7.jpg';
-import image8 from './../../common/img/photo-8.jpg';
-import image9 from './../../common/img/photo-9.jpg';
-import image10 from './../../common/img/photo-10.jpg';
-import image11 from './../../common/img/photo-11.jpg';
+import image2 from './../../common/img/fotografia/2.jpg';
+import image1 from './../../common/img/fotografia/1.jpg';
+import image3 from './../../common/img/fotografia/3.jpg';
+import image4 from './../../common/img/fotografia/4.jpg';
+import image5 from './../../common/img/fotografia/5.jpg';
+import image6 from './../../common/img/fotografia/6.jpg';
+import image7 from './../../common/img/fotografia/7.jpg';
+import image8 from './../../common/img/fotografia/8.jpg';
+import image9 from './../../common/img/fotografia/9.jpg';
+import image10 from './../../common/img/fotografia/10.jpg';
+import image11 from './../../common/img/fotografia/11.jpg';
+import image12 from './../../common/img/fotografia/12.jpg';
+import image13 from './../../common/img/fotografia/13.jpg';
+import image14 from './../../common/img/fotografia/14.jpg';
+import image15 from './../../common/img/fotografia/15.jpg';
+import image16 from './../../common/img/fotografia/16.jpg';
 class RmPhotographyController {
   /*@ngInject*/
   constructor(User) {
@@ -18,8 +23,8 @@ class RmPhotographyController {
     };
 
     this.images = [
-      image1,
       image2,
+      image1,
       image3,
       image4,
       image5,
@@ -28,7 +33,12 @@ class RmPhotographyController {
       image8,
       image9,
       image10,
-      image11
+      image11,
+      image12,
+      image13,
+      image14,
+      image15,
+      image16
     ];
   }
 

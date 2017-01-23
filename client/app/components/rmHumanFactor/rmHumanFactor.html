@@ -1,16 +1,17 @@
-<rm-info-section>
-  <name>Factor humano</name>
+<rm-info-section ng-if="!vm.galleryShowed">
+  <name>Factor Humano</name>
   <info-content>
   </info-content>
   <info-text>
-    <p>
-      Labore cupidatat ut minim aliqua et cupidatat voluptate amet occaecat. Mollit aliqua nostrud voluptate fugiat magna ipsum
-      ea anim. In veniam consequat veniam sint enim reprehenderit do anim. Sit ea ex fugiat occaecat minim Lorem eu aliqua
-      occaecat elit dolor cupidatat.
-    </p>
-    <p>Culpa eiusmod nostrud mollit ut mollit elit. Enim occaecat minim eiusmod velit exercitation occaecat sunt. Aliqua et
-      occaecat officia eiusmod deserunt consequat id. Magna nulla non aliqua amet aliquip. Ullamco amet cupidatat labore
-      quis ipsum fugiat velit aliqua.
-    </p>
+    <p>Experiencia, compromiso, confianza: la mayor fortaleza de Grupo Romo es su gente.</p>
+    <div class="-gallery-button" ng-click="vm.showGallery()">
+      <div>
+        <span>Galería</span>
+        <md-icon md-font-icon="Ionicons" class="ion-android-add">
+        </md-icon>
+      </div>
+    </div>
   </info-text>
 </rm-info-section>
+<rm-gallery images="vm.images" ng-show="vm.galleryShowed">
+</rm-gallery>

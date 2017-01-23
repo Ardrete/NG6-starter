@@ -1,8 +1,8 @@
-import image1 from './../../common/img/distr_1.jpg';
-import image2 from './../../common/img/distr_2.jpg';
-import image3 from './../../common/img/distr_3.jpg';
-import image4 from './../../common/img/distr_4.jpg';
-import image5 from './../../common/img/distr_5.jpg';
+import image1 from './../../common/img/insumos_almacenaje/1.jpg';
+import image2 from './../../common/img/insumos_almacenaje/2.jpg';
+import image3 from './../../common/img/insumos_almacenaje/3.jpg';
+import image4 from './../../common/img/insumos_almacenaje/4.jpg';
+import image5 from './../../common/img/insumos_almacenaje/5.jpg';
 
 class RmDistributionController {
   /*@ngInject*/
