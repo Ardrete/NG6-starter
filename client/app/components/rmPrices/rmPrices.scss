@@ -4,12 +4,12 @@ rm-prices {
     height: 100%;
     background: #E2E3DB;
     .-container {
-      padding: 6em 6em 2em;
+      padding: 10vh 6vh 4vh;
       .-head {
-        font-size: 80px;
+        font-size: 10vh;
         font-weight: 600;
         color: white;
-        margin-left: -8px;
+        margin-left: -0.5vh;
         height: 10vh;
         width: 100%;
       }
@@ -29,9 +29,6 @@ rm-prices {
         }
       }
       .-image {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
         img {
           padding-bottom: 2vh;
         }
