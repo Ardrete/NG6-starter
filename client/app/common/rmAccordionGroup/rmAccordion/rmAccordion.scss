@@ -1,0 +1,71 @@
+@import '../../common.scss';
+
+// TODO: CLOSE EFFECT
+.rm-accordion {
+  .accordion-title {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 8px;
+    font-size: 16px;
+    color: $color00;
+    border-left-style: solid;
+    border-left-width: 3px;
+    i {
+      float: right;
+      font-size: 24px;
+    }
+  }
+}
+
+// OPEN
+.rm-accordion.open {
+  .accordion-title {
+    cursor: pointer;
+    background-color: $color-oslo-gray;
+    border-left-color: $color-white;
+  }
+  .accordion-title i {
+    @extend .ion-ios-arrow-up;
+  }
+  .accordion-content {
+    @include transition(all .2s ease-out);
+  }
+}
+
+// CLOSE
+.rm-accordion.close {
+  .accordion-title {
+    cursor: pointer;
+    background-color: $color07;
+    border-left-color: $color-mine-shaft;
+  }
+  .accordion-title i {
+    @extend .ion-ios-arrow-down;
+  }
+  .accordion-content {
+    @include transition(all .2s ease-out);
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+// DISABLE
+.rm-accordion.disable {
+  .accordion-title {
+    background-color: $color09;
+    border-left-color: $other07;
+  }
+  .accordion-title i {
+    @extend .ion-ios-arrow-down;
+  }
+  .accordion-content {
+    @include transition(all .2s ease-out);
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+}

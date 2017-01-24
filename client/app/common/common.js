@@ -9,6 +9,7 @@ import rmSidebar from './rmSidebar/rmSidebar';
 import rmSection from './rmSection/rmSection';
 import rmGallery from './rmGallery/rmGallery';
 import User from './user/user';
+import rmAccordionGroup from './rmAccordionGroup/rmAccordionGroup';
 
 let commonModule = angular.module('app.common',
   [
@@ -18,6 +19,7 @@ let commonModule = angular.module('app.common',
     rmInfoSection,
     rmSection,
     rmGallery,
+    rmAccordionGroup,
     User
   ])
   .config(($mdThemingProvider, $mdIconProvider) => {

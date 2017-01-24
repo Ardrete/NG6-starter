@@ -1,0 +1,16 @@
+<li layout="column"
+  class="rm-accordion"
+  ng-class="accordion.status">
+  <div layout="row"
+    class="accordion-title"
+    ng-click="vm.toggle()">
+    <span ng-transclude="title"></span>
+    <span flex></span>
+    <i class="accordion-collapse"></i>
+  </div>
+  <div layout="column"
+    class="accordion-content"
+    ng-if="accordion.status == 'open' || accordion.render=='true' "
+    ng-transclude="content" >
+  </div>
+</li>

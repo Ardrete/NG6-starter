@@ -1,0 +1,7 @@
+.rm-accordion-group {
+  margin: 0;
+  -webkit-padding-start: 0;
+  .rm-accordion:not(:first-child) {
+    margin-top: 2px;
+  }
+}

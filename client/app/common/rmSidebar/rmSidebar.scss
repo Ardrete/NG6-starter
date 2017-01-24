@@ -25,17 +25,18 @@ rm-sidebar {
     }
   }
   .-list {
+    overflow: auto;
+    height: 60vh;
     md-list-item {
       min-height: 36px;
       height: 36px;
-      &.-first-level{
+      &.-first-level {
         padding-left: 4vh;
       }
-      &.-head-level{
+      &.-head-level {
         pointer-events: none;
       }
     }
-
   }
   .-links {
     position: absolute;

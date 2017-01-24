@@ -1,17 +1,22 @@
 @import '../../common/common.scss';
 rm-faqs {
-  .-nav {
-    background: #E2E3DB;
+  >.-section {
+    padding-top: 10vh;
   }
   .-container {
-    .-info-content {
-      &::before {
-        @include filter(grayscale(100%));
-        background: url(../../common/img/faqs-background.jpg) center center no-repeat #555;
-      }
+    overflow: auto;
+    padding: 5vh;
+    >.-head {
+      font-size: 5vh;
+      padding: 2vh 0;
+      font-weight: 600;
+      color: white;
+      height: 10vh;
+      width: 100%;
     }
-  }
-  .-info-text {
-      background: nth($colors, random($lengthColors));
+    .rm-accordion-group {
+      overflow: auto;
+      height: 70vh;
+    }
   }
 }
