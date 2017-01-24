@@ -1,5 +1,5 @@
-import image2 from './../../common/img/factor_humano/1.jpg';
-import image1 from './../../common/img/factor_humano/2.jpg';
+import image1 from './../../common/img/factor_humano/1.jpg';
+import image2 from './../../common/img/factor_humano/2.jpg';
 import image3 from './../../common/img/factor_humano/3.jpg';
 import image4 from './../../common/img/factor_humano/4.jpg';
 import image5 from './../../common/img/factor_humano/5.jpg';
