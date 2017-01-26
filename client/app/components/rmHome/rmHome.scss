@@ -15,6 +15,17 @@ rm-home {
     float: left;
   }
   .page1 {
+    .-go-down {
+      position: fixed;
+      bottom: 0vh;
+      font-size: 9vh;
+      md-icon {
+        text-shadow: 0px 0px 7px rgba(150, 150, 150, 0.46);
+        color: white;
+        height: 8vh;
+        width: 10vh;
+      }
+    }
     .page-container::before {
       background: url(../../common/img/home.jpg) center no-repeat;
       background-size: cover;

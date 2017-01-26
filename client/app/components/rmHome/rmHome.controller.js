@@ -68,6 +68,10 @@ class RmHomeController {
     this.services.user.setCloseButton(false);
   }
 
+  goDown(){
+    $('.main', this.$element).moveDown();
+  }
+
   $postLink() {
     this.$timeout(() => {
       $('.main', this.$element).onepage_scroll(this.oneScrollOptions);
