@@ -90,6 +90,7 @@ $content-height: 90vh;
         padding: 3em 2em 1em 2em;
         height: 70vh;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
       }
     }
   }

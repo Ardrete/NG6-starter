@@ -10,6 +10,7 @@
     "angular-filter": "0.5.12",
     "angular-material": "1.1.1",
     "angular-messages": "1.5.9",
+    "angular-touch": "1.5.9",
     "angular-ui-router": "^1.0.0-beta.1",
     "compass-mixins": "^0.12.10",
     "jquery": "^2.2.0",

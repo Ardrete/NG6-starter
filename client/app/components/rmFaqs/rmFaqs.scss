@@ -16,6 +16,7 @@ rm-faqs {
     }
     .rm-accordion-group {
       overflow: auto;
+      -webkit-overflow-scrolling: touch;
       height: 70vh;
     }
   }

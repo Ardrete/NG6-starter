@@ -5,14 +5,14 @@ $undocked-width: 1366px;
 $docked-width: 1680px;
 @mixin mobile {
   @media screen and (max-width: #{$tablet-width} -1) and (orientation: landscape),
-        screen and (max-height: #{$tablet-width} -1) and (orientation: portrait) {
+        screen and (max-width: #{$tablet-width} -1) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin tablet {
   @media screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width} -1px) and (orientation: landscape),
-         screen and (min-height : #{$tablet-width}) and (max-height: #{$desktop-width} -1px) and (orientation: portrait) {
+         screen and (min-width : #{$tablet-width}) and (max-width: #{$desktop-width} -1px) and (orientation: portrait) {
     @content;
   }
 }
