@@ -10,6 +10,7 @@ import rmSection from './rmSection/rmSection';
 import rmGallery from './rmGallery/rmGallery';
 import User from './user/user';
 import rmAccordionGroup from './rmAccordionGroup/rmAccordionGroup';
+import extensions from './common.extensions';
 
 let commonModule = angular.module('app.common',
   [
@@ -24,6 +25,8 @@ let commonModule = angular.module('app.common',
   ])
   .config(($mdThemingProvider, $mdIconProvider) => {
     "ngInject";
+
+    extensions.init();
 
     // http://www.google.com/design/spec/style/color.html#color-color-palette
     $mdThemingProvider.definePalette('primary', {

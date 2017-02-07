@@ -3,11 +3,12 @@ import years from '../../common/img/years2.png';
 
 class RmHomeController {
   /*@ngInject*/
-  constructor($element, $timeout, $scope, User, $state, $stateParams, bookSections) {
+  constructor($element, $timeout, $scope, User, $state, $stateParams, bookSections, $window) {
     this.name = 'rmHome';
     this.$element = $element;
     this.$timeout = $timeout;
     this.$scope = $scope;
+    this.$window = $window;
     this.$state = $state;
     this.$stateParams = $stateParams;
 
@@ -68,11 +69,13 @@ class RmHomeController {
     this.services.user.setCloseButton(false);
   }
 
-  goDown(){
+  goDown() {
     $('.main', this.$element).moveDown();
   }
 
   $postLink() {
+    this.isMobile = this.$window.mobilecheck();
+
     this.$timeout(() => {
       $('.main', this.$element).onepage_scroll(this.oneScrollOptions);
       let book;
@@ -89,9 +92,13 @@ class RmHomeController {
         this.imageSelected = book;
         this.services.user.setCloseButton(true, () => this.closeBook());
         $('.main', this.$element).moveDown();
-        this.$timeout(() => {
-          this.showTransition = true;
-        }, 500);
+        if (this.isMobile) {
+          this.initSectionCarousel();
+        } else {
+          this.$timeout(() => {
+            this.showTransition = true;
+          }, 500);
+        }
       }
       this.carousel = $('.-carousel', this.$element);
       this.carousel.slick(this.slickOptions);
@@ -129,6 +136,19 @@ class RmHomeController {
     this.$state.go(url);
   }
 
+  initSectionCarousel() {
+    this.$timeout(() => {
+      this.carouselMobile = $('.-carousel-sections', this.$element);
+      this.carouselMobile.slick({
+        dots: true,
+        speed: 300,
+        slidesToShow: 3,
+        adaptiveWidth: true,
+
+      });
+    });
+  }
+
   showDetail(image, $event, key) {
     const element = $($event.target).closest('.-image');
 
@@ -136,9 +156,15 @@ class RmHomeController {
       this.slickOptions.initialSlide = key;
       this.imageSelected = image;
       this.services.user.setCloseButton(true, () => this.closeBook());
-      this.$timeout(() => {
-        this.showTransition = true;
-      }, 500);
+      if (this.isMobile) {
+        if (this.isMobile) {
+          this.initSectionCarousel();
+        }
+      } else {
+        this.$timeout(() => {
+          this.showTransition = true;
+        }, 500);
+      }
     }
   }
 

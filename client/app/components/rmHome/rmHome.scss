@@ -17,6 +17,7 @@ rm-home {
   .page1 {
     .-go-down {
       position: fixed;
+      width: 100%;
       bottom: 0vh;
       font-size: 9vh;
       md-icon {
@@ -164,6 +165,27 @@ rm-home {
             &#section-10 {
               @include transform(translate(-9em, -10em));
             }
+          }
+        }
+      }
+      .-image-detail-mobile {
+        width: 100%;
+        img {
+          width: 50vh;
+          @include landscape {
+            width: 72vh;
+          }
+        }
+        .-carousel-sections {
+          width: 100%;
+          height: 20vh;
+          margin: 2vh 0;
+          .item-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            width: 20vh;
           }
         }
       }

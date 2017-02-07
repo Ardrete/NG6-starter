@@ -3,10 +3,10 @@
     <div class="-images" layout-fill>
       <img src="{{vm.logo}}" class="-logo"/>
       <img class="-year" src="{{vm.years}}">
-      <div class="-go-down">
-        <md-icon md-font-icon="Ionicons" ng-click="vm.goDown()" class="ion-ios-arrow-down">
-        </md-icon>
-      </div>
+    </div>
+    <div class="-go-down">
+      <md-icon md-font-icon="Ionicons" ng-click="vm.goDown()" class="ion-ios-arrow-down">
+      </md-icon>
     </div>
   </rm-section>
   <rm-section class="page2">
@@ -34,7 +34,7 @@
     </div>
     <div class="-image-detail"
       ng-class="{'-transition': vm.showTransition}"
-      ng-if="!!vm.imageSelected">
+      ng-if="!!vm.imageSelected && !vm.isMobile">
       <img ng-src="{{::vm.imageSelected.imageOpen}}" />
       <div ng-repeat="(key, section) in ::vm.imageSelected.sections"
         ng-click="vm.nav(section.link, vm.slickOptions.initialSlide)"
@@ -43,6 +43,23 @@
         <span>
           {{section.name}}
         </span>
+      </div>
+    </div>
+    <div ng-if="!!vm.imageSelected && vm.isMobile"
+    class="-image-detail-mobile">
+      <img ng-src="{{::vm.imageSelected.imageOpen}}" />
+      <div class="-carousel-sections">
+        <div class="item-circle"
+          ng-repeat="(key, section) in ::vm.imageSelected.sections"
+          flex="nogrow">
+          <div class="-circle -medium {{section.class || '-white'}} -section-link scaling"
+            ng-click="vm.nav(section.link, vm.slickOptions.initialSlide)"
+            id="section-{{key}}">
+            <span>
+              {{section.name}}
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </rm-section>

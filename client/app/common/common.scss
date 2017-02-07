@@ -1,7 +1,6 @@
 @import "compass";
 @import "compass/functions";
 @import "mixins/mixins";
-
 // COLOURS
 $color00: #fff;
 $color01: #002244;
@@ -281,9 +280,9 @@ $tooltip-padding: rem(1.0) rem(1.6);
 $logo-head-color: $color-white;
 $logo-head-font-size: 40px;
 $logo-head-padding: 0 2.2vh;
-$circle-border-size: 9em;
+$circle-border-size: 20vh;
 $circle-radius: $circle-border-size/2;
-$circle-font-size: 18px;
+$circle-font-size: 2.5vh;
 $colors: #67a9c1,
 #7d7d44,
 #6d3b6d;
@@ -318,5 +317,13 @@ $lengthColors: 3;
     -moz-border-radius: $circle-radius/2;
     -webkit-border-radius: $circle-radius/2;
     border-radius: $circle-radius/2;
+  }
+  &.-medium {
+    font-size: $circle-font-size/1.2;
+    width: $circle-border-size/1.2;
+    height: $circle-border-size/1.2;
+    -moz-border-radius: $circle-radius/1.2;
+    -webkit-border-radius: $circle-radius/1.2;
+    border-radius: $circle-radius/1.2;
   }
 }
