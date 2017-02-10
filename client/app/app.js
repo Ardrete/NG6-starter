@@ -8,6 +8,9 @@ import AppComponent from './app.component';
 import './vendors/onepage-scroll/jquery.onepage-scroll';
 import './vendors/onepage-scroll/jquery.onepage-scroll.css';
 import 'slick-carousel';
+import videoJs from 'video.js';
+import 'video.js/dist/video-js.min.css';
+import vjsVideo from 'vjs-video';
 
 import 'normalize.css';
 import './app.scss';
@@ -15,6 +18,7 @@ import './app.styl';
 
 angular.module('app', [
     uiRouter,
+    'vjs.video',
     ngMaterial,
     ngTouch,
     Common,

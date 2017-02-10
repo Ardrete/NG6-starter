@@ -1,9 +1,10 @@
 class RmGalleryController {
   /*@ngInject*/
-  constructor($timeout, $element) {
+  constructor($timeout, $element, $scope) {
     this.name = 'rmGallery';
     this.$timeout = $timeout;
     this.$element = $element;
+    this.$scope = $scope;
 
     this.slickOptions = {
       dots: true,
@@ -29,8 +30,29 @@ class RmGalleryController {
 
   }
 
+  pauseSlider() {
+    this.carousel.slick('slickPause');
+  }
+
+  unpauseSlider(){
+    this.carousel.slick('slickPlay');
+  }
+
   $postLink() {
+    const self = this;
     this.initCarousel();
+    this.$scope.$on('gallery.close', () => {
+      this.player.pause();
+    });
+    this.$scope.$on('vjsVideoReady', function (e, data) {
+      self.player = data.player;
+      self.player.on('click', () => {
+        self.pauseSlider();
+      });
+      self.player.on('pause', () => {
+        self.unpauseSlider();
+      });
+    });
   }
 
   $onDestroy() {

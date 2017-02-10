@@ -11,9 +11,19 @@
     <div class="-carousel-full">
       <div ng-repeat="(key, item) in ::vm.imageStyle" class="-image" ng-style="item">
       </div>
+      <div ng-repeat="item in ::vm.videos" class="-video" ng-click="vm.pauseSlider()">
+          <video width="640"
+                height="264"
+                vjs-video
+                class="video-js vjs-default-skin"
+                controls
+                preload="auto"
+                vjs-media="item"
+                poster="poster.jpg">
+          </video>
+      </div>
     </div>
     <div class="dots">
-
     </div>
   </div>
 </div>

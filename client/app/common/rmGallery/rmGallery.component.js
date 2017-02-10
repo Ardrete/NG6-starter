@@ -6,6 +6,7 @@ const rmGalleryComponent = {
   restrict: 'E',
   bindings: {
     images: '<',
+    videos: '<?',
     ngShow: '<?'
   },
   template,
