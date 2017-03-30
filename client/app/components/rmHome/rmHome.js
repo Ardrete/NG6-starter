@@ -10,8 +10,6 @@ const homeModule = angular.module('rmHome', [
 .config(($stateProvider, $urlRouterProvider) => {
   'ngInject';
 
-  $urlRouterProvider.otherwise('/home');
-
   $stateProvider
     .state('home', {
       url: '/home?key',
