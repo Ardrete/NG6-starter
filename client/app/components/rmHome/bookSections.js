@@ -49,7 +49,7 @@ const sections = {
     link: 'editionCare'
   },
   photography: {
-    name: 'Fotografía',
+    name: 'Fotografía y video',
     link: 'photography'
   }
 };
@@ -65,11 +65,13 @@ const bookSections = [{
     sections.prices,
     sections.premedia,
     sections.design,
-    sections.editionCare
+    sections.editionCare,
+    sections.photography,
+    sections.packing
   ]
 }, {
   image: book2,
-  name: 'Retrotabula',
+  name: 'Retrotábula',
   imageOpen: bookOpen2,
   sections: [
       /*Saque video y empaque*/
@@ -82,7 +84,7 @@ const bookSections = [{
   ]
 }, {
   image: book3,
-  name: 'México Encanto y Pasión',
+  name: 'México. Encanto y pasión',
   imageOpen: bookOpen3,
   sections: [
     sections.printing,
@@ -139,7 +141,7 @@ const bookSections = [{
   ]
 }, {
   image: book8,
-  name: 'Los moles',
+  name: 'Mulli',
   imageOpen: bookOpen8,
   sections: [
       /*Saque empaque*/

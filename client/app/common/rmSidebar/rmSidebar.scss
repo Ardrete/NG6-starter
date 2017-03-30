@@ -47,6 +47,7 @@ rm-sidebar {
     text-align: left;
     .-title {
       padding: 15px 10px;
+      font-size: small;
     }
     md-icon {
       &:hover {
@@ -54,7 +55,7 @@ rm-sidebar {
       }
       cursor: pointer;
       padding: 0 10px;
-      font-size: 30px;
+      font-size: 18px;
       color: white;
     }
   }

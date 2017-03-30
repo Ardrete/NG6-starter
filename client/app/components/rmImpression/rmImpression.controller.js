@@ -15,10 +15,7 @@ import image14 from './../../common/img/imprenta/14.jpg';
 import image15 from './../../common/img/imprenta/15.jpg';
 import image16 from './../../common/img/imprenta/16.jpg';
 import image17 from './../../common/img/imprenta/17.jpg';
-import image18 from './../../common/img/imprenta/18.jpg';
 import image19 from './../../common/img/imprenta/19.jpg';
-import image20 from './../../common/img/imprenta/20.jpg';
-import image21 from './../../common/img/imprenta/21.jpg';
 import image22 from './../../common/img/imprenta/22.jpg';
 import image23 from './../../common/img/imprenta/23.jpg';
 import image24 from './../../common/img/imprenta/24.jpg';
@@ -50,10 +47,7 @@ class RmImpressionController {
       image15,
       image16,
       image17,
-      image18,
       image19,
-      image20,
-      image21,
       image22,
       image23,
       image24
