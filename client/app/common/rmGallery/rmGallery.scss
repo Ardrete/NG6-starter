@@ -32,6 +32,7 @@ rm-gallery {
     .-principal {
       width: 100%;
       .-carousel-full {
+        background-color: black;
         .-image,
         .-video {
           height: 100vh;
@@ -39,7 +40,9 @@ rm-gallery {
           display: flex;
           align-items: center;
           justify-content: center;
-          @include background-size(cover);
+          @include background-size(contain);
+          background-repeat: no-repeat;
+          background-position: center;
         }
         .-video {
           background-color: black;
