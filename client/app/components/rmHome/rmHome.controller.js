@@ -133,6 +133,7 @@ class RmHomeController {
         key
       });
     });
+    window.sessionStorage.setItem('backTo',  key);
     this.$state.go(url);
   }
 

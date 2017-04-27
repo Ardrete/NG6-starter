@@ -36,11 +36,11 @@ let componentModule = angular.module('app.components', [
     rmPremedia,
     rmEditionCare
   ])
-  .run(($transitions, User, $location) => {
+  .run(($transitions, User, $location, $state) => {
     'ngInject';
 
     $transitions.onStart({},
-      (event, toState, toParams, fromState, fromParams) => {
+      (trans) => {
         const scroller = $('.onepage-wrapper');
 
         if (!_.isEmpty(scroller)) {
@@ -48,10 +48,26 @@ let componentModule = angular.module('app.components', [
         }
         User.setCloseButton(false);
       });
-    $transitions.onSuccess({}, ($transitions) => {
-    });
+    $transitions.onStart({
+      to: (state) => state.name !== 'home'
+    }, (trans) => {
+      const key = 'backTo';
+      const bookKey = parseInt(window.sessionStorage.getItem(key));
+
+      if (bookKey >= 0 && !User.hasBackButton()) {
+        User.setBackButton(true, () => {
+          window.sessionStorage.removeItem(key);
+          User.setBackButton(false);
+          $state.go('home', {
+            key: bookKey
+          });
+        });
+      }
+    })
+
+    $transitions.onSuccess({}, ($transitions) => {});
   })
 
-.name;
+  .name;
 
 export default componentModule;
