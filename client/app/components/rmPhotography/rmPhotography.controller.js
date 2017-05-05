@@ -1,3 +1,4 @@
+import image18 from './../../common/img/fotografia/18.jpg';
 import image2 from './../../common/img/fotografia/2.jpg';
 import image1 from './../../common/img/fotografia/1.jpg';
 import image3 from './../../common/img/fotografia/3.jpg';
@@ -14,6 +15,8 @@ import image13 from './../../common/img/fotografia/13.jpg';
 import image14 from './../../common/img/fotografia/14.jpg';
 import image15 from './../../common/img/fotografia/15.jpg';
 import image16 from './../../common/img/fotografia/16.jpg';
+import image17 from './../../common/img/fotografia/17.jpg';
+
 class RmPhotographyController {
   /*@ngInject*/
   constructor(User) {
@@ -23,6 +26,7 @@ class RmPhotographyController {
     };
 
     this.images = [
+      image18,
       image2,
       image1,
       image3,
@@ -38,7 +42,8 @@ class RmPhotographyController {
       image13,
       image14,
       image15,
-      image16
+      image16,
+      image17
     ];
   }
 
