@@ -1,5 +1,8 @@
 import image1 from './../../common/img/coordinacion_editorial/1.jpg';
 import image2 from './../../common/img/coordinacion_editorial/2.jpg';
+import image3 from './../../common/img/coordinacion_editorial/3.jpg';
+import image4 from './../../common/img/coordinacion_editorial/4.jpg';
+import image5 from './../../common/img/coordinacion_editorial/5.jpg';
 
 class RmEditionCareController {
   /*@ngInject*/
@@ -11,7 +14,10 @@ class RmEditionCareController {
     
   this.images = [
     image1,
-    image2
+    image2,
+    image3,
+    image4,
+    image5
   ];
 }
   

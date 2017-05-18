@@ -17,7 +17,7 @@ import bookOpen8 from '../../common/img/book-open8.jpg';
 
 const sections = {
   distribution: {
-    name: 'Almacenamiento y distribución',
+    name: 'Almacenaje y distribución',
     link: 'distribution'
   },
   packing: {
@@ -25,7 +25,7 @@ const sections = {
     link: 'packing'
   },
   printing: {
-    name: 'Impresión',
+    name: 'Imprenta',
     link: 'printing'
   },
   video: {
@@ -41,7 +41,7 @@ const sections = {
     link: 'premedia'
   },
   design: {
-    name: 'Diseño',
+    name: 'Diseño gráfico',
     link: 'design'
   },
   editionCare: {
